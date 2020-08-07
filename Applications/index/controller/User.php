@@ -11,9 +11,10 @@ class User
     public function getInfo(Request $request)
     {
         $id = $request->param('id',0);
+        $param = $request->param();
+        var_dump($param);
         $model = new M();
         $res = $model->getInfo($id);
-        var_dump($res);
-        return $res;
+        return ['data' =>$res ,'code'=> 0, 'msg' => 'success'];
     }
 }

@@ -55,13 +55,13 @@ class Events
                     // 数据库密码
                     'password'    => 'root',
                     // 数据库名
-                    'database' => 'user',
+                    'database' => 'worker',
                     // 数据库编码默认采用utf8
                     'charset'  => 'utf8',
                     // 数据库表前缀
                     'prefix'   => '',
                     // 数据库调试模式
-                    'debug'    => true,
+                    'debug'    => false,
                 ],
             ],
         ]);
@@ -91,10 +91,11 @@ class Events
        $message = json_decode($message,true);
        $request = new Request($message);
        $res = Route::dispatch($request);
+       $response = array_merge(['app' => $request->app(),'api' => $request->api(),'ver' => $request->ver()],$res);
+
        // 向当前client_id发送数据
-       Gateway::sendToClient($client_id, json_encode($res));
-        // 向所有人发送
-        //Gateway::sendToAll("$client_id said $message\r\n");
+       Gateway::sendToClient($client_id, json_encode($response));
+
    }
 
    /**

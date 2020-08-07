@@ -40,6 +40,8 @@ class Request
      */
     protected $app;
 
+
+
     /**
      * 当前请求版本号
      * @var array
@@ -68,6 +70,30 @@ class Request
 
     }
 
+
+    /**
+     * @return array
+     */
+    public function api()
+    {
+        return $this->api;
+    }
+
+    /**
+     * @return array
+     */
+    public function app()
+    {
+        return $this->app;
+    }
+
+    /**
+     * @return array
+     */
+    public function ver()
+    {
+        return $this->ver;
+    }
 
     /**
      * 获取当前请求的参数

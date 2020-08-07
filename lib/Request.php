@@ -40,7 +40,7 @@ class Request
      */
     protected $app;
 
-    
+
     /**
      * 当前请求版本号
      * @var array
@@ -204,7 +204,6 @@ class Request
         if (is_null($filter)) {
             $filter = [];
         } else {
-            $filter = $filter ?: $this->filter;
             if (is_string($filter) && false === strpos($filter, '/')) {
                 $filter = explode(',', $filter);
             } else {

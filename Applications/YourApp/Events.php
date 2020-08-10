@@ -23,6 +23,8 @@ use \GatewayWorker\Lib\Gateway;
 use lib\Request;
 use lib\Route;
 use think\facade\Db;
+use lib\Config;
+use lib\Log;
 
 // 自动加载类
 require_once __DIR__ . '/../../vendor/autoload.php';
@@ -40,31 +42,8 @@ class Events
      */
     public static function onWorkerStart($worker)
     {
-        Db::setConfig([
-            // 默认数据连接标识
-            'default'     => 'mysql',
-            // 数据库连接信息
-            'connections' => [
-                'mysql' => [
-                    // 数据库类型
-                    'type'     => 'mysql',
-                    // 主机地址
-                    'hostname' => '127.0.0.1',
-                    // 用户名
-                    'username' => 'root',
-                    // 数据库密码
-                    'password'    => 'root',
-                    // 数据库名
-                    'database' => 'worker',
-                    // 数据库编码默认采用utf8
-                    'charset'  => 'utf8',
-                    // 数据库表前缀
-                    'prefix'   => '',
-                    // 数据库调试模式
-                    'debug'    => false,
-                ],
-            ],
-        ]);
+        Db::setConfig(Config::get('database'));
+
     }
 
     /**
@@ -79,6 +58,8 @@ class Events
         Gateway::sendToClient($client_id, "Hello $client_id\r\n");
         // 向所有人发送
         Gateway::sendToAll("$client_id login\r\n");
+
+
     }
 
    /**
@@ -92,7 +73,7 @@ class Events
        $request = new Request($message);
        $res = Route::dispatch($request);
        $response = array_merge(['app' => $request->app(),'api' => $request->api(),'ver' => $request->ver()],$res);
-
+       Log::info('response',$response);
        // 向当前client_id发送数据
        Gateway::sendToClient($client_id, json_encode($response));
 

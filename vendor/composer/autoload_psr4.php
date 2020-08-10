@@ -10,5 +10,6 @@ return array(
     'Workerman\\' => array($vendorDir . '/workerman/workerman'),
     'Psr\\SimpleCache\\' => array($vendorDir . '/psr/simple-cache/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+    'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'GatewayWorker\\' => array($vendorDir . '/workerman/gateway-worker/src'),
 );

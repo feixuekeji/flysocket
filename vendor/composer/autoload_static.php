@@ -24,6 +24,10 @@ class ComposerStaticInite9dcbb58e58b71e967ad5224cbf8e988
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
         ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
         'G' => 
         array (
             'GatewayWorker\\' => 14,
@@ -47,6 +51,10 @@ class ComposerStaticInite9dcbb58e58b71e967ad5224cbf8e988
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
         'GatewayWorker\\' => 
         array (

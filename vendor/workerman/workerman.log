@@ -70,3 +70,1460 @@ Stack trace:
 #9 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
 #10 {main}
 2020-08-07 10:00:30 pid:1 Worker process terminated
+2020-08-10 14:59:16 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:17 pid:1 Worker process terminated
+2020-08-10 14:59:18 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:19 pid:1 Worker process terminated
+2020-08-10 14:59:20 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:21 pid:1 Worker process terminated
+2020-08-10 14:59:22 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:23 pid:1 Worker process terminated
+2020-08-10 14:59:24 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:25 pid:1 Worker process terminated
+2020-08-10 14:59:26 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:26 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:27 pid:1 Worker process terminated
+2020-08-10 14:59:28 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:28 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:29 pid:1 Worker process terminated
+2020-08-10 14:59:30 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:30 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:31 pid:1 Worker process terminated
+2020-08-10 14:59:32 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:32 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:33 pid:1 Worker process terminated
+2020-08-10 14:59:34 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:34 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:35 pid:1 Worker process terminated
+2020-08-10 14:59:36 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:36 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:37 pid:1 Worker process terminated
+2020-08-10 14:59:38 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:38 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:39 pid:1 Worker process terminated
+2020-08-10 14:59:40 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:40 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:41 pid:1 Worker process terminated
+2020-08-10 14:59:42 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:42 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:43 pid:1 Worker process terminated
+2020-08-10 14:59:44 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:44 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:45 pid:1 Worker process terminated
+2020-08-10 14:59:46 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:46 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:47 pid:1 Worker process terminated
+2020-08-10 14:59:48 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:48 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:49 pid:1 Worker process terminated
+2020-08-10 14:59:50 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 14:59:50 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 14:59:51 pid:1 Worker process terminated
+2020-08-10 14:59:59 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:00 pid:1 Worker process terminated
+2020-08-10 15:00:01 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:02 pid:1 Worker process terminated
+2020-08-10 15:00:03 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:04 pid:1 Worker process terminated
+2020-08-10 15:00:05 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:06 pid:1 Worker process terminated
+2020-08-10 15:00:07 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:08 pid:1 Worker process terminated
+2020-08-10 15:00:09 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:09 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:10 pid:1 Worker process terminated
+2020-08-10 15:00:11 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:11 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:12 pid:1 Worker process terminated
+2020-08-10 15:00:13 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:13 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:14 pid:1 Worker process terminated
+2020-08-10 15:00:15 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:15 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:16 pid:1 Worker process terminated
+2020-08-10 15:00:17 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:17 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:18 pid:1 Worker process terminated
+2020-08-10 15:00:19 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:19 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:20 pid:1 Worker process terminated
+2020-08-10 15:00:21 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:21 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:22 pid:1 Worker process terminated
+2020-08-10 15:00:23 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:23 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:24 pid:1 Worker process terminated
+2020-08-10 15:00:25 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:25 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:26 pid:1 Worker process terminated
+2020-08-10 15:00:27 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:27 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:28 pid:1 Worker process terminated
+2020-08-10 15:00:29 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:29 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:30 pid:1 Worker process terminated
+2020-08-10 15:00:31 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:31 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:32 pid:1 Worker process terminated
+2020-08-10 15:00:33 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:33 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:34 pid:1 Worker process terminated
+2020-08-10 15:00:35 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:35 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:36 pid:1 Worker process terminated
+2020-08-10 15:00:37 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:37 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:38 pid:1 Worker process terminated
+2020-08-10 15:00:39 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:39 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:40 pid:1 Worker process terminated
+2020-08-10 15:00:41 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:41 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:42 pid:1 Worker process terminated
+2020-08-10 15:00:43 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:43 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:44 pid:1 Worker process terminated
+2020-08-10 15:00:45 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:45 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:46 pid:1 Worker process terminated
+2020-08-10 15:00:47 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:47 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:48 pid:1 Worker process terminated
+2020-08-10 15:00:49 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:49 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:50 pid:1 Worker process terminated
+2020-08-10 15:00:51 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:51 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:52 pid:1 Worker process terminated
+2020-08-10 15:00:53 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:53 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:54 pid:1 Worker process terminated
+2020-08-10 15:00:55 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:55 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:56 pid:1 Worker process terminated
+2020-08-10 15:00:57 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:57 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:00:58 pid:1 Worker process terminated
+2020-08-10 15:00:59 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:00:59 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-10 15:01:00 pid:1 Worker process terminated
+2020-08-10 15:01:01 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:31:10 pid:1 Error: Class 'Log' not found in D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php:68
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{\n    "name": "...')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n    "name": "...')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #41)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\Select->loop()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2020-08-10 15:31:10 pid:1 Worker process terminated
+2020-08-10 15:34:33 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(69): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onMessage('7f0000010b54000...', '{\n    "name": "...')
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n    "name": "...')
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #41)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\Select->loop()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#13 {main}
+2020-08-10 15:34:33 pid:1 Worker process terminated
+2020-08-10 15:37:37 pid:1 Exception: api  is not exists in D:\phpstudy_pro\WWW\GatewayWorker\lib\Request.php:65
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Request.php(52): lib\Request->init(Array)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(71): lib\Request->__construct(Array)
+#2 [internal function]: Events::onMessage('7f0000010b54000...', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n    "name": "...')
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #41)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\Select->loop()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-10 15:37:37 pid:1 Worker process terminated
+2020-08-10 15:38:50 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:38:51 pid:1 Worker process terminated
+2020-08-10 15:38:52 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:38:53 pid:1 Worker process terminated
+2020-08-10 15:38:54 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:38:55 pid:1 Worker process terminated
+2020-08-10 15:38:57 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:38:58 pid:1 Worker process terminated
+2020-08-10 15:38:59 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:00 pid:1 Worker process terminated
+2020-08-10 15:39:00 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:01 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:02 pid:1 Worker process terminated
+2020-08-10 15:39:02 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:03 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:04 pid:1 Worker process terminated
+2020-08-10 15:39:04 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:05 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:06 pid:1 Worker process terminated
+2020-08-10 15:39:07 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:07 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:08 pid:1 Worker process terminated
+2020-08-10 15:39:09 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:09 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:10 pid:1 Worker process terminated
+2020-08-10 15:39:11 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:11 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:12 pid:1 Worker process terminated
+2020-08-10 15:39:13 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:13 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:14 pid:1 Worker process terminated
+2020-08-10 15:39:15 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:15 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:16 pid:1 Worker process terminated
+2020-08-10 15:39:17 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:17 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:18 pid:1 Worker process terminated
+2020-08-10 15:39:19 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:19 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:20 pid:1 Worker process terminated
+2020-08-10 15:39:21 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:21 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:22 pid:1 Worker process terminated
+2020-08-10 15:39:23 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:23 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:24 pid:1 Worker process terminated
+2020-08-10 15:39:25 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:25 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:26 pid:1 Worker process terminated
+2020-08-10 15:39:27 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:27 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:28 pid:1 Worker process terminated
+2020-08-10 15:39:29 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:29 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:30 pid:1 Worker process terminated
+2020-08-10 15:39:31 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:31 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:32 pid:1 Worker process terminated
+2020-08-10 15:39:33 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:33 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:34 pid:1 Worker process terminated
+2020-08-10 15:39:35 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:35 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:36 pid:1 Worker process terminated
+2020-08-10 15:39:37 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:37 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:38 pid:1 Worker process terminated
+2020-08-10 15:39:39 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:39 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:40 pid:1 Worker process terminated
+2020-08-10 15:39:41 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:41 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:42 pid:1 Worker process terminated
+2020-08-10 15:39:43 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:43 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:44 pid:1 Worker process terminated
+2020-08-10 15:39:45 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:45 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:46 pid:1 Worker process terminated
+2020-08-10 15:39:47 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:47 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:48 pid:1 Worker process terminated
+2020-08-10 15:39:49 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:49 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:50 pid:1 Worker process terminated
+2020-08-10 15:39:51 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:51 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:52 pid:1 Worker process terminated
+2020-08-10 15:39:53 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:53 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:54 pid:1 Worker process terminated
+2020-08-10 15:39:55 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:55 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:56 pid:1 Worker process terminated
+2020-08-10 15:39:57 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:57 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:39:58 pid:1 Worker process terminated
+2020-08-10 15:39:59 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:39:59 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:40:00 pid:1 Worker process terminated
+2020-08-10 15:40:01 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:40:01 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:40:02 pid:1 Worker process terminated
+2020-08-10 15:40:03 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:40:03 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:40:04 pid:1 Worker process terminated
+2020-08-10 15:40:05 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:40:05 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:40:06 pid:1 Worker process terminated
+2020-08-10 15:40:07 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:40:07 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:40:08 pid:1 Worker process terminated
+2020-08-10 15:40:09 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:40:09 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:40:10 pid:1 Worker process terminated
+2020-08-10 15:40:11 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:40:11 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:40:12 pid:1 Worker process terminated
+2020-08-10 15:40:13 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:40:13 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:40:14 pid:1 Worker process terminated
+2020-08-10 15:40:15 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:40:15 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:40:16 pid:1 Worker process terminated
+2020-08-10 15:40:17 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:40:17 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:40:18 pid:1 Worker process terminated
+2020-08-10 15:40:19 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:40:19 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 99 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(99): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(47): lib\Log::createLogger('info')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(47): lib\Log::__callStatic('info', Array)
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-10 15:40:20 pid:1 Worker process terminated
+2020-08-10 15:40:21 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:40:23 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-10 15:50:31 pid:1 Exception: api  is not exists in D:\phpstudy_pro\WWW\GatewayWorker\lib\Request.php:65
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Request.php(52): lib\Request->init(Array)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(74): lib\Request->__construct(Array)
+#2 [internal function]: Events::onMessage('7f0000010b54000...', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n    "name": "...')
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #41)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\Select->loop()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-10 15:50:31 pid:1 Worker process terminated

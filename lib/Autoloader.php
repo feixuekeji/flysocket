@@ -14,7 +14,7 @@
 namespace lib;
 
 /**
- * Autoload.
+ * 自动加载
  */
 class Autoloader
 {

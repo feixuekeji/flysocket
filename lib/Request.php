@@ -66,6 +66,7 @@ class Request
         $this->setModule($api[0]);
         $this->setController($api[1]);
         $this->setAction($api[2]);
+        Log::info('request',$options);
 
     }
 

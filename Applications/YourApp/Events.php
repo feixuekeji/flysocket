@@ -25,6 +25,9 @@ use lib\Route;
 use think\facade\Db;
 use lib\Config;
 use lib\Log;
+use Clue\React\Redis\Factory;
+use Clue\React\Redis\Client;
+use Workerman\Worker;
 
 // 自动加载类
 require_once __DIR__ . '/../../vendor/autoload.php';
@@ -42,7 +45,12 @@ class Events
      */
     public static function onWorkerStart($worker)
     {
+        //数据库初始化
         Db::setConfig(Config::get('database'));
+        //Redis初始化
+        global $factory;
+        $loop    = Worker::getEventLoop();
+        $factory = new Factory($loop);
 
     }
 
@@ -69,10 +77,27 @@ class Events
     */
    public static function onMessage($client_id, $message)
    {
-       $message = json_decode($message,true);
-       $request = new Request($message);
-       $res = Route::dispatch($request);
-       $response = array_merge(['app' => $request->app(),'api' => $request->api(),'ver' => $request->ver()],$res);
+       if ($message == 'ping')
+           return;
+       $message = json_decode($message,true) ?? [];
+       try {
+            $request = new Request($message);
+           } catch (Exception $e){
+           $response = ['data' => '','code' => $e->getCode(),'msg' => $e->getMessage()];
+           Gateway::sendToClient($client_id, json_encode($response));
+           return;
+       }
+
+       try {
+           $res = Route::dispatch($request);
+           $response = $request->response($res['data'],$res['code'],$res['msg']);
+       } catch (Exception $e) {
+           $response = $request->response('',$e->getCode(),$e->getMessage());
+       } catch (Error $error) {
+           //echo 'Error: ' . $error . PHP_EOL;
+           $response = $request->response('',$error->getCode(),$error->getMessage());
+
+       }
        Log::info('response',$response);
        // 向当前client_id发送数据
        Gateway::sendToClient($client_id, json_encode($response));

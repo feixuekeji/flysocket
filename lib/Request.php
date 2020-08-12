@@ -364,4 +364,17 @@ class Request
     }
 
 
+    public function response($data,$code,$msg)
+    {
+        $response = array('app' => $this->app,
+            'api' => $this->api,
+            'ver' => $this->ver,
+            'data' => $data,
+            'code' => $code,
+            'msg' => $msg
+        );
+        return $response;
+    }
+
+
 }

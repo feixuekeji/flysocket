@@ -1,4 +1,5 @@
 <?php
+
 namespace lib;
 
 class Route
@@ -14,16 +15,11 @@ class Route
         $controller = $request->controller();
         $action = $request->action();
 
-        $className = '\\Applications\\'.$module.'\\controller\\'.ucfirst($controller);
-        try {
-            $obj = new $className();
-            $res = call_user_func_array(array($obj, $action), array($request));
-            return $res;
-        } catch (\Exception $e) {
-            echo $e; //展示错误结果
-            return;
-        }
+        $className = '\\Applications\\' . $module . '\\controller\\' . ucfirst($controller);
 
+        $obj = new $className($request);
+        $res = call_user_func_array(array($obj, $action), array($request));
+        return $res;
 
 
     }

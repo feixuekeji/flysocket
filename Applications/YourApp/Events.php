@@ -92,9 +92,10 @@ class Events
            $res = Route::dispatch($request);
            $response = $request->response($res['data'],$res['code'],$res['msg']);
        } catch (Exception $e) {
+           echo 'Error: ' . $e . PHP_EOL;
            $response = $request->response('',$e->getCode(),$e->getMessage());
        } catch (Error $error) {
-           //echo 'Error: ' . $error . PHP_EOL;
+           echo 'Error: ' . $error . PHP_EOL;
            $response = $request->response('',$error->getCode(),$error->getMessage());
 
        }

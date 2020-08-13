@@ -31,3 +31,13 @@
         "password": "123456"
     }
 }
+
+{
+    "api": "admin/admin/add",
+    "app": "http://www.bejson.com",
+    "ver": 88,
+    "data": {
+        "name": "admin",
+        "password": ""
+    }
+}

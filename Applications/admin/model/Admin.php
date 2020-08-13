@@ -66,4 +66,27 @@ class Admin extends Model
         }
 
 
+    public function addAdmin($input)
+    {
+
+            $addData = [
+                'name' => $input['name'],
+                'password' => md5(base64_encode($input['password'])),
+                'create_time' =>time(),
+                'role_id' => intval($input['role_id'] ?? 0),
+            ];
+        $validate = new \Applications\admin\validate\Admin();
+
+        if (!$validate->check($addData)) {
+            var_dump($validate->getError());
+        }
+
+                $tag = $this->insert($addData);
+
+
+        return $tag;
+
+    }
+
+
 }

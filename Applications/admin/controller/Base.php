@@ -19,7 +19,7 @@ class Base
      */
     public function __construct(Request $request)
     {
-        $this->initAuth($request);
+        //$this->initAuth($request);
     }
 
     /**

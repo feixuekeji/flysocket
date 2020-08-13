@@ -80,3 +80,5 @@
 2020-08-12 18:09:02 test:INFO ==> LOG: response -- Events.php:101##onMessage {"app":"http://www.bejson.com","api":"admin/login/login","ver":88,"data":"","code":401,"msg":"该用户名不存在"} 
 2020-08-12 18:09:12 test:INFO ==> LOG: request -- Request.php:69##init {"api":"admin/login/login","app":"http://www.bejson.com","ver":88,"data":{"name":"admin","password":"123456"}} 
 2020-08-12 18:09:12 test:INFO ==> LOG: response -- Events.php:101##onMessage {"app":"http://www.bejson.com","api":"admin/login/login","ver":88,"data":"","code":401,"msg":"该用户名不存在"} 
+2020-08-12 18:09:48 test:INFO ==> LOG: request -- Request.php:69##init {"api":"admin/login/login","app":"http://www.bejson.com","ver":88,"data":{"name":"admin","password":"123456"}} 
+2020-08-12 18:09:48 test:INFO ==> LOG: response -- Events.php:101##onMessage {"app":"http://www.bejson.com","api":"admin/login/login","ver":88,"data":{"token":1},"code":0,"msg":"success"} 

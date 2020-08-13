@@ -38,7 +38,7 @@ CREATE TABLE `role_power` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
   `role_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '角色ID',
   `menu_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '菜单ID',
-  `index` tinyint(1) NOT NULL DEFAULT '0' COMMENT '查看',
+  `list` tinyint(1) NOT NULL DEFAULT '0' COMMENT '查看',
   `add` tinyint(1) NOT NULL DEFAULT '0' COMMENT '新增',
   `edit` tinyint(1) NOT NULL DEFAULT '0' COMMENT '编辑',
   `delete` tinyint(1) NOT NULL DEFAULT '0' COMMENT '删除',

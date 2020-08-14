@@ -19,5 +19,6 @@ return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'GatewayWorker\\' => array($vendorDir . '/workerman/gateway-worker/src'),
+    'Firebase\\JWT\\' => array($vendorDir . '/firebase/php-jwt/src'),
     'Clue\\React\\Redis\\' => array($vendorDir . '/clue/redis-react/src'),
 );

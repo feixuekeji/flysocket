@@ -19,7 +19,7 @@ class Base
      */
     public function __construct(Request $request)
     {
-        //$this->initAuth($request);
+        $this->initAuth($request);
     }
 
     /**
@@ -27,7 +27,7 @@ class Base
      */
     public function initAuth(Request $request){
         $adminModel = new \Applications\admin\model\Admin();
-        $adminId = $_SESSION['uid'] ?? 0;
+        $adminId = $_SESSION['adminId'] ?? 0;
         if (!$adminId){
             throw new \Exception('未登录',401);
         }else{

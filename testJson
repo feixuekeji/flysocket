@@ -33,11 +33,22 @@
 }
 
 {
-    "api": "admin/admin/add",
-    "app": "http://www.bejson.com",
-    "ver": 88,
-    "data": {
-        "name": "admin",
-        "password": ""
-    }
-}
+     "api": "admin/admin/add",
+     "app": "http://www.bejson.com",
+     "ver": 88,
+     "data": {
+         "name": "admin333",
+         "password": "123456"
+     }
+ }
+
+
+ {
+     "api": "admin/login/token",
+     "app": "http://www.bejson.com",
+     "ver": 88,
+     "data": {
+         "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTczOTI0NzYsIm5iZiI6MTU5NzM5MjQ3NiwiZXhwIjoxNTk3NDc4ODc2LCJkYXRhIjp7ImFkbWluSWQiOjF9fQ.-Hu4Vvh7Ns8G-N4NRDcGKcLTaZ74uaRCaL9ecuHBtpI",
+         "password": "123456"
+     }
+ }

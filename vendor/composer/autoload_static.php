@@ -44,6 +44,10 @@ class ComposerStaticInite9dcbb58e58b71e967ad5224cbf8e988
         array (
             'GatewayWorker\\' => 14,
         ),
+        'F' => 
+        array (
+            'Firebase\\JWT\\' => 13,
+        ),
         'C' => 
         array (
             'Clue\\React\\Redis\\' => 17,
@@ -103,6 +107,10 @@ class ComposerStaticInite9dcbb58e58b71e967ad5224cbf8e988
         'GatewayWorker\\' => 
         array (
             0 => __DIR__ . '/..' . '/workerman/gateway-worker/src',
+        ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
         'Clue\\React\\Redis\\' => 
         array (

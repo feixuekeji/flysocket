@@ -2,6 +2,7 @@
 
 namespace Applications\admin\model;
 
+use lib\Token;
 use think\facade\Db;
 use think\Model;
 
@@ -52,15 +53,18 @@ class Admin extends Model
                 ->where('name', $name)
                 ->find();
             if ($res) {
-                //if ($res->password == md5(base64_encode($password).$salt)) {
-                if ($res->password == $password) {
-                    $token = 1;
-                   $data = ['data' => ['token' => $token], 'code' => 0, 'msg' => 'success'];
+                if ($res->password == md5(base64_encode($password.$salt))) {
+                    $jwtToken = new Token();
+                    $tokenData = array(
+                        'adminId' => $res->id,
+                    );
+                    $token = $jwtToken->createToken($tokenData, 86400);
+                   $data = ['data' => $token, 'code' => 0, 'msg' => 'success'];
                 } else {
-                    $data = ['data' => '', 'code' => 401, 'msg' => '登录失败，请检查您的信息'];
+                    $data = ['data' => '', 'code' => 40101, 'msg' => '登录失败，请检查您的信息'];
                 }
             } else {
-                $data = ['data' => '', 'code' => 401, 'msg' => '该用户名不存在'];
+                $data = ['data' => '', 'code' => 40102, 'msg' => '该用户名不存在'];
             }
             return $data;
         }
@@ -68,10 +72,10 @@ class Admin extends Model
 
     public function addAdmin($input)
     {
-
+        $salt = 'eifvk6';
         $addData = [
             'name' => $input['name'],
-            'password' => md5(base64_encode($input['password'])),
+            'password' => md5(base64_encode($input['password'].$salt)),
             'create_time' => time(),
             'role_id' => intval($input['role_id'] ?? 0),
         ];

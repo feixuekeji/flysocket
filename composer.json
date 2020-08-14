@@ -7,6 +7,7 @@
         "workerman/gateway-worker" : ">=3.0.0",
         "topthink/think-orm": "^2.0",
         "monolog/monolog": "^2.1",
-        "clue/redis-react": "^2.3"
+        "clue/redis-react": "^2.3",
+        "firebase/php-jwt": "^5.2"
     }
 }

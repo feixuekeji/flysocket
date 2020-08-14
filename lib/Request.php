@@ -62,7 +62,7 @@ class Request
         $this->ver =  $options['ver'] ?? '';
         $api = explode('/',$this->api);
         if (count($api) < 3)
-            throw new \Exception('api  is not exists');
+            throw new \Exception('api  is not exists',100);
         $this->setModule($api[0]);
         $this->setController($api[1]);
         $this->setAction($api[2]);

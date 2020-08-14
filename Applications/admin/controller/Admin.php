@@ -33,7 +33,7 @@ class Admin extends Base
         $param = $request->param();
         $model = new M();
         $res = $model->addAdmin($param);
-        return ['data' =>$res ,'code'=> 0, 'msg' => 'success'];
+        return $res;
     }
 
 }

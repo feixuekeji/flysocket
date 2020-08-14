@@ -4,7 +4,7 @@ use lib\Validate;
 class Admin extends Validate
 {
     protected $rule = [
-        'name'         =>  'require|max:50',
+        'name'         =>  'require|max:50|unique:admin',
         'password'    =>  'require',
         'role_id'      => '>:100'
 

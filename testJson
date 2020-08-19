@@ -52,3 +52,102 @@
          "password": "123456"
      }
  }
+
+
+ {
+      "api": "admin/admin/list",
+      "app": "http://www.bejson.com",
+      "ver": 88,
+      "data": {
+          "page": 3
+      }
+  }
+
+   {
+        "api": "admin/menu/list",
+        "app": "http://www.bejson.com",
+        "ver": 88,
+        "data": {
+            "page": 3
+        }
+    }
+
+
+    {
+        "app":"http://www.bejson.com",
+        "api":"admin/menu/add",
+        "ver":88,
+        "data":[
+            {
+                "menu_id":2,
+                "list":0,
+                "custom_one":1,
+                "add":0,
+                "edit":0,
+                "delete":0
+            },
+            {
+                            "menu_id":3,
+                            "list":0,
+                            "custom_one":1,
+                            "add":0,
+                            "edit":0,
+                            "delete":0
+                        }
+        ],
+        "code":0,
+        "msg":"success"
+    }
+
+
+    {
+        "app": "http://www.bejson.com",
+        "api": "admin/role/add",
+        "ver": 88,
+        "data": {
+            "name": "管理员1",
+            "power": [
+                {
+                    "menu_id": 2,
+                    "list": 0,
+                    "custom_one": 1,
+                    "add": 0,
+                    "edit": 0,
+                    "delete": 0
+                },
+                {
+                    "menu_id": 3,
+                    "list": 0,
+                    "custom_one": 1,
+                    "add": 0,
+                    "edit": 0,
+                    "delete": 0
+                }
+            ]
+        },
+        "code": 0,
+        "msg": "success"
+    }
+
+        {
+            "app": "http://www.bejson.com",
+            "api": "admin/role/delete",
+            "ver": 88,
+            "data": {
+                "id": 1
+            },
+            "code": 0,
+            "msg": "success"
+        }
+
+
+                {
+                    "app": "http://www.bejson.com",
+                    "api": "myinfo",
+                    "ver": 88,
+                    "data": {
+                        "id": 1
+                    },
+                    "code": 0,
+                    "msg": "success"
+                }

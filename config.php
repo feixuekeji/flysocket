@@ -38,5 +38,7 @@ return [
             ],
         ],
     ],
+    //密码盐
+    'password_salt' => 'erigtjoerjhw',
 
 ];

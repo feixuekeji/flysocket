@@ -1,5 +1,6 @@
 <?php
 namespace lib;
+
 class Request
 {
 
@@ -35,6 +36,18 @@ class Request
     protected $api;
 
     /**
+     * 当前请求路由地址
+     * @var array
+     */
+    protected $route;
+
+    /**
+     * 当前请求ip地址
+     * @var array
+     */
+    protected $ip;
+
+    /**
      * 当前请求app
      * @var array
      */
@@ -47,6 +60,8 @@ class Request
      */
     protected $ver;
 
+
+
     public function __construct(array $options = [])
     {
         $this->init($options);
@@ -58,15 +73,22 @@ class Request
     {
         $this->param = $options['data'] ?? [];
         $this->api =  $options['api'] ?? '';
+        $this->route =  $options['api'] ?? '';
         $this->app =  $options['app'] ?? '';
         $this->ver =  $options['ver'] ?? '';
-        $api = explode('/',$this->api);
+        $this->ip =  $this->ip();
+        $route = include_once __DIR__.'/../route.php';//加载路由表
+        if (array_key_exists($this->route, $route))//获取真实路径
+            $this->route = $route[$this->route];
+        $api = explode('/',$this->route);
         if (count($api) < 3)
             throw new \Exception('api  is not exists',100);
         $this->setModule($api[0]);
         $this->setController($api[1]);
         $this->setAction($api[2]);
         Log::info('request',$options);
+        Log::info('request',get_object_vars($this));
+
 
     }
 
@@ -77,6 +99,14 @@ class Request
     public function api()
     {
         return $this->api;
+    }
+
+    /**
+     * @return array
+     */
+    public function route()
+    {
+        return $this->route;
     }
 
     /**
@@ -361,6 +391,38 @@ class Request
     {
         $name = $this->action ?: '';
         return $convert ? $name : strtolower($name);
+    }
+
+    /**
+     * 获取客户端IP地址
+     * @access public
+     * @param  integer   $type 返回类型 0 返回IP地址 1 返回IPV4地址数字
+     * @return mixed
+     */
+    public function ip($type = 0)
+    {
+        $type      = $type ? 1 : 0;
+
+        if (null !== $this->ip) {
+            return $this->ip[$type];
+        }
+
+        $ip = $_SERVER['REMOTE_ADDR'];
+
+        // IP地址类型
+        $ip_mode = (strpos($ip, ':') === false) ? 'ipv4' : 'ipv6';
+
+        // IP地址合法验证
+        if (filter_var($ip, FILTER_VALIDATE_IP) !== $ip) {
+            $ip = ('ipv4' === $ip_mode) ? '0.0.0.0' : '::';
+        }
+
+        // 如果是ipv4地址，则直接使用ip2long返回int类型ip；如果是ipv6地址，暂时不支持，直接返回0
+        $long_ip = ('ipv4' === $ip_mode) ? sprintf("%u", ip2long($ip)) : 0;
+
+        $ip = [$ip, $long_ip];
+
+        return $ip[$type];
     }
 
 

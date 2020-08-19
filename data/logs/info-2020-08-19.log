@@ -1,0 +1,30 @@
+2020-08-19 10:40:13 test:INFO ==> LOG: request -- Request.php:69##init {"app":"http://www.bejson.com","api":"admin/role/add","ver":88,"data":{"name":"管理员","power":[{"menu_id":2,"list":0,"custom_one":1,"add":0,"edit":0,"delete":0},{"menu_id":3,"list":0,"custom_one":1,"add":0,"edit":0,"delete":0}]},"code":0,"msg":"success"} 
+2020-08-19 10:40:13 test:INFO ==> LOG: response -- Events.php:103##onMessage {"app":"http://www.bejson.com","api":"admin/role/add","ver":88,"data":{"data":"","code":0,"msg":"成功"},"code":0,"msg":"success"} 
+2020-08-19 10:41:31 test:INFO ==> LOG: request -- Request.php:69##init {"app":"http://www.bejson.com","api":"admin/role/add","ver":88,"data":{"name":"管理员1","power":[{"menu_id":2,"list":0,"custom_one":1,"add":0,"edit":0,"delete":0},{"menu_id":3,"list":0,"custom_one":1,"add":0,"edit":0,"delete":0}]},"code":0,"msg":"success"} 
+2020-08-19 10:41:31 test:INFO ==> LOG: response -- Events.php:103##onMessage {"app":"http://www.bejson.com","api":"admin/role/add","ver":88,"data":{"data":"","code":0,"msg":"成功"},"code":0,"msg":"success"} 
+2020-08-19 15:30:26 test:INFO ==> LOG: request -- Request.php:69##init {"app":"http://www.bejson.com","api":"admin/role/delete","ver":88,"data":{"id":1},"code":0,"msg":"success"} 
+2020-08-19 15:30:26 test:INFO ==> LOG: response -- Events.php:103##onMessage {"app":"http://www.bejson.com","api":"admin/role/delete","ver":88,"data":"","code":20001,"msg":"该角色下存在管理员，不能删除"} 
+2020-08-19 16:45:29 test:INFO ==> LOG: request -- Request.php:82##init {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"id":1},"code":0,"msg":"success"} 
+2020-08-19 16:48:00 test:INFO ==> LOG: request -- Request.php:82##init {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"id":1},"code":0,"msg":"success"} 
+2020-08-19 16:48:00 test:INFO ==> LOG: response -- Events.php:103##onMessage {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"Applications\\index\\model\\User":{"Id":1,"name":"hahahha"}},"code":0,"msg":"success"} 
+2020-08-19 16:53:12 test:INFO ==> LOG: request -- Request.php:82##init {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"id":1},"code":0,"msg":"success"} 
+2020-08-19 16:53:12 test:INFO ==> LOG: request -- Request.php:83##init  
+2020-08-19 16:53:12 test:INFO ==> LOG: response -- Events.php:103##onMessage {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"Applications\\index\\model\\User":{"Id":1,"name":"hahahha"}},"code":0,"msg":"success"} 
+2020-08-19 16:55:44 test:INFO ==> LOG: request -- Request.php:82##init {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"id":1},"code":0,"msg":"success"} 
+2020-08-19 16:55:44 test:INFO ==> LOG: request -- Events.php:85##onMessage  
+2020-08-19 16:55:44 test:INFO ==> LOG: response -- Events.php:104##onMessage {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"Applications\\index\\model\\User":{"Id":1,"name":"hahahha"}},"code":0,"msg":"success"} 
+2020-08-19 17:09:31 test:INFO ==> LOG: request -- Request.php:82##init {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"id":1},"code":0,"msg":"success"} 
+2020-08-19 17:09:31 test:INFO ==> LOG: request -- Events.php:85##onMessage  
+2020-08-19 17:09:31 test:INFO ==> LOG: response -- Events.php:104##onMessage {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"Applications\\index\\model\\User":{"Id":1,"name":"hahahha"}},"code":0,"msg":"success"} 
+2020-08-19 17:15:20 test:INFO ==> LOG: request -- Request.php:82##init {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"id":1},"code":0,"msg":"success"} 
+2020-08-19 17:15:20 test:INFO ==> LOG: request -- Events.php:85##onMessage  
+2020-08-19 17:15:20 test:INFO ==> LOG: response -- Events.php:105##onMessage {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"Applications\\index\\model\\User":{"Id":1,"name":"hahahha"}},"code":0,"msg":"success"} 
+2020-08-19 17:17:10 test:INFO ==> LOG: request -- Request.php:82##init {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"id":1},"code":0,"msg":"success"} 
+2020-08-19 17:17:10 test:INFO ==> LOG: request -- Events.php:85##onMessage  
+2020-08-19 17:17:10 test:INFO ==> LOG: response -- Events.php:104##onMessage {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"Applications\\index\\model\\User":{"Id":1,"name":"hahahha"}},"code":0,"msg":"success"} 
+2020-08-19 17:18:26 test:INFO ==> LOG: request -- Request.php:82##init {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"id":1},"code":0,"msg":"success"} 
+2020-08-19 17:18:26 test:INFO ==> LOG: request -- Request.php:83##init {"module":"index","controller":"User","action":"getInfo","param":{"id":1},"api":"myinfo","route":"index/User/getInfo","app":"http://www.bejson.com","ver":88} 
+2020-08-19 17:18:26 test:INFO ==> LOG: response -- Events.php:103##onMessage {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"Applications\\index\\model\\User":{"Id":1,"name":"hahahha"}},"code":0,"msg":"success"} 
+2020-08-19 17:25:41 test:INFO ==> LOG: request -- Request.php:89##init {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"id":1},"code":0,"msg":"success"} 
+2020-08-19 17:25:41 test:INFO ==> LOG: request -- Request.php:90##init {"module":"index","controller":"User","action":"getInfo","param":{"id":1},"api":"myinfo","route":"index/User/getInfo","ip":"127.0.0.1","app":"http://www.bejson.com","ver":88} 
+2020-08-19 17:25:41 test:INFO ==> LOG: response -- Events.php:103##onMessage {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"Applications\\index\\model\\User":{"Id":1,"name":"hahahha"}},"code":0,"msg":"success"} 

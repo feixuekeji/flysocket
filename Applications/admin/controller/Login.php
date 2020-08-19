@@ -27,7 +27,7 @@ class Login
             $_SESSION['adminId'] = $adminId;
             return ['data'=>'','code' => 0, 'msg' => 'success'];
         } catch (\Exception $e){
-            return ['data'=>'','code' => 401, 'msg' => $e->getMessage()];
+            return ['data'=>'','code' => $e->getCode(), 'msg' => $e->getMessage()];
         }
 
     }

@@ -2,6 +2,7 @@
 
 namespace Applications\admin\model;
 
+use lib\Config;
 use lib\Token;
 use think\facade\Db;
 use think\Model;
@@ -29,7 +30,7 @@ class Admin extends Model
             $action = $api[2];
             $menuModel = new Menu();
             $menuId =  $menuModel->getIdByAction($controller);
-            $roleId = $this->where('id',$adminId)->value('role_id');
+            $roleId = $this->where(['id' =>$adminId,'status' => 1])->value('role_id');
             $where = [
                 'role_id' => $roleId,
                 'menu_id' => $menuId,
@@ -47,7 +48,7 @@ class Admin extends Model
 
     public function login($name,$password)
     {
-        $salt = 'eifvk6';
+        $salt = Config::get('password_salt');
             $res = $this
                 ->field('password,id')
                 ->where('name', $name)
@@ -59,7 +60,7 @@ class Admin extends Model
                         'adminId' => $res->id,
                     );
                     $token = $jwtToken->createToken($tokenData, 86400);
-                   $data = ['data' => $token, 'code' => 0, 'msg' => 'success'];
+                   $data = ['data' => ['token' => $token['token'],'adminId' => $res->id], 'code' => 0, 'msg' => 'success'];
                 } else {
                     $data = ['data' => '', 'code' => 40101, 'msg' => '登录失败，请检查您的信息'];
                 }
@@ -72,7 +73,7 @@ class Admin extends Model
 
     public function addAdmin($input)
     {
-        $salt = 'eifvk6';
+        $salt = Config::get('password_salt');
         $addData = [
             'name' => $input['name'],
             'password' => md5(base64_encode($input['password'].$salt)),

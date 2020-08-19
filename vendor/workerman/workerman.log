@@ -3122,3 +3122,45 @@ Stack trace:
 2020-08-14 14:18:57 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
 2020-08-14 14:18:58 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
 2020-08-14 14:18:59 pid:1 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2020-08-17 10:51:03 pid:1 TypeError: Argument 3 passed to Monolog\Logger::addRecord() must be of the type array, object given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 76 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:286
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(76): Monolog\Logger->addRecord(400, '==> LOG: except...', Object(PDOException))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(95): lib\Log::__callStatic('error', Array)
+#2 [internal function]: Events::onMessage('7f0000010b54000...', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n    "api": "a...')
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #81)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#15 {main}
+2020-08-17 10:51:03 pid:1 Worker process terminated
+2020-08-17 17:00:54 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class Applications\admin\controller\Admin, because the name is already in use in D:\phpstudy_pro\WWW\GatewayWorker\Applications\admin\controller\Menu.php on line 49"
+2020-08-17 17:03:33 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-08-19 16:45:29 pid:1 TypeError: Argument 3 passed to Monolog\Logger::addRecord() must be of the type array, object given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 76 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:286
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(76): Monolog\Logger->addRecord(200, '==> LOG: reques...', Object(lib\Request))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Request.php(83): lib\Log::__callStatic('info', Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Request.php(61): lib\Request->init(Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(84): lib\Request->__construct(Array)
+#4 [internal function]: Events::onMessage('7f0000010b54000...', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n             ...')
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #81)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#17 {main}
+2020-08-19 16:45:29 pid:1 Worker process terminated

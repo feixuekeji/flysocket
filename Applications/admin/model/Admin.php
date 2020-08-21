@@ -69,6 +69,22 @@ class Admin extends Model
         }
 
 
+    public function getList($size = 10,$page = 1,$where = null)
+    {
+        $list = $this
+            ->field('a.*,r.name role_name')
+            ->alias('a')
+            ->leftJoin('role r','a.role_id = a.id')
+            ->where($where)
+            ->order(['a.id' => 'desc'])
+            ->paginate([
+                'list_rows'=> $size,
+                'page'     => $page,
+            ]);
+        return $list;
+    }
+
+
     public function add($input)
     {
         $salt = Config::get('password_salt');
@@ -124,6 +140,8 @@ class Admin extends Model
 
     public function del($id)
     {
+        if ($id == 1)
+            return ['data' => '', 'code' => 20006, 'msg' => '初始管理员不能删除'];
         $res = $this->where('id',$id)->delete();
         if ($res)
             return ['data' => '', 'code' => 0, 'msg' => '成功'];

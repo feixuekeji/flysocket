@@ -47,6 +47,14 @@ class Events
     {
         //数据库初始化
         Db::setConfig(Config::get('database'));
+        $redis = \lib\Redis::getInstance(['host'=> '127.0.0.1','port' => '6379','auth'=>'']);
+        $redis->set('key','TK');
+
+        $redis->set('number','1');
+
+        $redis->setex('key',5,'TK'); //设置有效期为5秒的键值
+
+        //Db::setCache($cache);
         //Redis初始化
         global $factory;
         $loop    = Worker::getEventLoop();

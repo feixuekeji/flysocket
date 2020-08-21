@@ -21,6 +21,21 @@ class Admin extends Base
     }
 
 
+    public function list(Request $request)
+    {
+        $size = $request->param('size/d',10);
+        $page = $request->param('page/d',1);
+        $status = $request->post('status', 0);
+        $keyword = $request->post('keyword', '');
+        $where = [];
+        $status > 0 && $where[] = array('a.status', '=', $status);
+        if (!empty($keyword))
+            $where[] = array('a.name', 'like', '%' . $keyword . '%');
+        $res = $this->model->getList($size,$page,$where);
+        return ['data' =>$res ,'code'=> 0, 'msg' => 'success'];
+    }
+
+
     public function add(Request $request)
     {
         $param = $request->param();

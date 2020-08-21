@@ -14,7 +14,9 @@ class Role extends Base
 
     public function list(Request $request)
     {
-        $res = $this->model->getList(10);
+        $size = $request->param('size/d',10);
+        $page = $request->param('page/d',1);
+        $res = $this->model->getList($size,$page);
         return ['data' =>$res ,'code'=> 0, 'msg' => 'success'];
     }
 

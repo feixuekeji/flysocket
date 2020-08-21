@@ -62,12 +62,14 @@ class Request
 
 
 
+    protected static $routeConfig;
+
     public function __construct(array $options = [])
     {
         $this->init($options);
 
-
     }
+
 
     public function init(array $options = [])
     {
@@ -77,9 +79,10 @@ class Request
         $this->app =  $options['app'] ?? '';
         $this->ver =  $options['ver'] ?? '';
         $this->ip =  $this->ip();
-        $route = include_once __DIR__.'/../route.php';//加载路由表
-        if (array_key_exists($this->route, $route))//获取真实路径
-            $this->route = $route[$this->route];
+        if (empty(self::$routeConfig))
+            self::$routeConfig  = include_once __DIR__.'/../route.php';//加载路由表
+        if (array_key_exists($this->route, self::$routeConfig))//获取真实路径
+            $this->route = self::$routeConfig[$this->route];
         $api = explode('/',$this->route);
         if (count($api) < 3)
             throw new \Exception('api  is not exists',100);

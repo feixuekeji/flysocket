@@ -141,6 +141,7 @@
         }
 
 
+
                 {
                     "app": "http://www.bejson.com",
                     "api": "myinfo",
@@ -151,3 +152,27 @@
                     "code": 0,
                     "msg": "success"
                 }
+
+
+                        {
+                            "app": "http://www.bejson.com",
+                            "api": "admin/admin/delete",
+                            "ver": 88,
+                            "data": {
+                                "id": 3
+                            },
+                            "code": 0,
+                            "msg": "success"
+                        }
+  {
+                              "app": "http://www.bejson.com",
+                              "api": "admin/admin/edit",
+                              "ver": 88,
+                              "data": {
+                                  "id": 7,
+                                  "name": "uywquiofweiu",
+                                  "status" : 1
+                              },
+                              "code": 0,
+                              "msg": "success"
+                          }

@@ -44,8 +44,6 @@ class Admin extends Model
     }
 
 
-
-
     public function login($name,$password)
     {
         $salt = Config::get('password_salt');
@@ -71,7 +69,7 @@ class Admin extends Model
         }
 
 
-    public function addAdmin($input)
+    public function add($input)
     {
         $salt = Config::get('password_salt');
         $addData = [
@@ -81,14 +79,55 @@ class Admin extends Model
             'role_id' => intval($input['role_id'] ?? 0),
         ];
         $validate = new \Applications\admin\validate\Admin();
-
         if (!$validate->check($addData))
             return ['data' => '', 'code' => 300, 'msg' => $validate->getError()];
+        $roleInfo = Role::where(['id'=>$input['role_id'],'status' => 1])->find();
+        if (empty($roleInfo))
+            return ['data' => '', 'code' => 20003, 'msg' => '角色不存在'];
         $res = $this->insert($addData);
         if ($res)
             return ['data' => '', 'code' => 0, 'msg' => '成功'];
         return ['data' => '', 'code' => 500, 'msg' => '异常'];
 
+    }
+
+
+    public function edit($input)
+    {
+        $id = $input['id'];
+        $salt = Config::get('password_salt');
+        $info = $this->where('id',$id)->find();
+        if ($info->isEmpty())
+            return ['data' => '', 'code' => 20004, 'msg' => '账号不存在'];
+        $addData = [
+            'name' => $input['name'],
+            'create_time' => time(),
+            'role_id' => intval($input['role_id'] ?? 0),
+            'status' => $input['status'],
+        ];
+        if (!empty($input['password'])) {
+            //如果输入了新密码
+            $addData['password'] = md5(base64_encode($input['password'].$salt));
+        }
+        $validate = new \Applications\admin\validate\Admin();
+        if (!$validate->check($addData))
+            return ['data' => '', 'code' => 300, 'msg' => $validate->getError()];
+        $roleInfo = Role::where(['id'=>$input['role_id'],'status' => 1])->find();
+        if (empty($roleInfo))
+            return ['data' => '', 'code' => 20003, 'msg' => '角色不存在'];
+        $res = $info->save($addData);;
+        if ($res)
+            return ['data' => '', 'code' => 0, 'msg' => '成功'];
+        return ['data' => '', 'code' => 20005, 'msg' => '业务异常'];
+
+    }
+
+    public function del($id)
+    {
+        $res = $this->where('id',$id)->delete();
+        if ($res)
+            return ['data' => '', 'code' => 0, 'msg' => '成功'];
+        return ['data' => '', 'code' => 20004, 'msg' => '账号不存在'];
     }
 
 

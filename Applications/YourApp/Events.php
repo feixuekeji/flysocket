@@ -65,8 +65,7 @@ class Events
         // 向当前client_id发送数据
         Gateway::sendToClient($client_id, "Hello $client_id\r\n");
         // 向所有人发送
-        Gateway::sendToAll("$client_id login\r\n");
-
+        //Gateway::sendToAll("$client_id login\r\n");
 
     }
 
@@ -94,12 +93,14 @@ class Events
        } catch (Exception $e) {
            Log::error('exception',[$e]);
            //echo 'Error: ' . $e . PHP_EOL;
-           $response = $request->response('',$e->getCode() ?? 1,$e->getMessage());
+           $response = $request->response('',$e->getCode() ?: 1,iconv('gbk', 'utf-8', $e->getMessage()));
        } catch (Error $error) {
            Log::error('error',[$error]);
-           $response = $request->response('',$error->getCode() ?? 1,$error->getMessage());
-
+           $response = $request->response('',$error->getCode() ?: 1,$error->getMessage());
        }
+
+
+
        Log::info('response',$response);
        // 向当前client_id发送数据
        Gateway::sendToClient($client_id, json_encode($response));
@@ -113,6 +114,6 @@ class Events
    public static function onClose($client_id)
    {
        // 向所有人发送
-       GateWay::sendToAll("$client_id logout\r\n");
+       //GateWay::sendToAll("$client_id logout\r\n");
    }
 }

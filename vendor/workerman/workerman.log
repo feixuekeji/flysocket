@@ -3164,3 +3164,33 @@ Stack trace:
 #16 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
 #17 {main}
 2020-08-19 16:45:29 pid:1 Worker process terminated
+2020-08-19 18:25:10 pid:1 Worker process terminated
+2020-08-20 11:26:55 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare lib\Request::$route in D:\phpstudy_pro\WWW\GatewayWorker\lib\Request.php on line 65"
+2020-08-20 14:02:59 pid:1 TypeError: Argument 1 passed to lib\Request::__construct() must be of the type array, int given, called in D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php on line 84 and defined in D:\phpstudy_pro\WWW\GatewayWorker\lib\Request.php:67
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(84): lib\Request->__construct(1)
+#1 [internal function]: Events::onMessage('7f0000010b54000...', 1)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '1')
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #81)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2020-08-20 14:02:59 pid:1 Worker process terminated
+2020-08-20 16:58:07 pid:1 Worker process terminated
+2020-08-20 17:01:48 pid:1 Worker process terminated
+2020-08-20 17:36:18 pid:1 Worker process terminated
+2020-08-20 17:38:35 pid:1 Worker process terminated
+2020-08-20 17:43:37 pid:1 Worker process terminated
+2020-08-20 17:50:30 pid:1 Worker process terminated
+2020-08-20 17:55:30 pid:1 Worker process terminated
+2020-08-21 09:17:01 pid:1 Worker process terminated
+2020-08-21 09:17:18 pid:1 Worker process terminated
+2020-08-21 09:17:25 pid:1 Worker process terminated

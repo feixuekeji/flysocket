@@ -121,7 +121,7 @@ class Role extends Model
             $this->commit();
             if ($res)
                 return ['data' => '', 'code' => 0, 'msg' => '成功'];
-            return ['data' => '', 'code' => 20002, 'msg' => '角色id不存在'];
+            return ['data' => '', 'code' => 20002, 'msg' => '角色不存在'];
 
         } catch (\Exception $e) {
             // 回滚事务

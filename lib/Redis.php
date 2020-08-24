@@ -41,5 +41,17 @@ class Redis
         return call_user_func_array([self::$_instance, $method], $args);
     }
 
+    /**
+     * 静态调用
+     * @param $method
+     * @param $args
+     * @return mixed
+     */
+    public static function __callStatic($method,$args)
+    {
+        return call_user_func_array([self::$_instance, $method], $args);
+    }
+
+
 
 }

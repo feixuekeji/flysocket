@@ -53,8 +53,9 @@ class Events
         $redis->set('number','1');
 
         $redis->setex('key',5,'TK'); //设置有效期为5秒的键值
+        \lib\Redis::set('eeeee','1');
 
-        //Db::setCache($cache);
+        //Db::setCache($redis);
         //Redis初始化
         global $factory;
         $loop    = Worker::getEventLoop();

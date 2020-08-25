@@ -28,6 +28,8 @@ use lib\Log;
 use Clue\React\Redis\Factory;
 use Clue\React\Redis\Client;
 use Workerman\Worker;
+use lib\Cache;
+use lib\App;
 
 // 自动加载类
 require_once __DIR__ . '/../../vendor/autoload.php';
@@ -45,17 +47,7 @@ class Events
      */
     public static function onWorkerStart($worker)
     {
-        //数据库初始化
-        Db::setConfig(Config::get('database'));
-        $redis = \lib\Redis::getInstance(['host'=> '127.0.0.1','port' => '6379','auth'=>'']);
-        $redis->set('key','TK');
-
-        $redis->set('number','1');
-
-        $redis->setex('key',5,'TK'); //设置有效期为5秒的键值
-        \lib\Redis::set('eeeee','1');
-
-        //Db::setCache($redis);
+        App::init();
         //Redis初始化
         global $factory;
         $loop    = Worker::getEventLoop();
@@ -87,33 +79,34 @@ class Events
    {
        if ($message == 'ping')
            return;
-       $message = json_decode($message,true) ?? [];
-       try {
-            $request = new Request($message);
-           } catch (Exception $e){
-           $response = ['data' => '','code' => $e->getCode(),'msg' => $e->getMessage()];
-           Gateway::sendToClient($client_id, json_encode($response));
-           return;
-       }
+//       $message = json_decode($message,true) ?? [];
+//       try {
+//            $request = new Request($message);
+//           } catch (Exception $e){
+//           $response = ['data' => '','code' => $e->getCode(),'msg' => $e->getMessage()];
+//           Gateway::sendToClient($client_id, json_encode($response));
+//           return;
+//       }
+//
+//       try {
+//           $res = Route::dispatch($request);
+//           $response = $request->response($res['data'],$res['code'],$res['msg']);
+//       } catch (Exception $e) {
+//           Log::error('exception',[$e]);
+//           //echo 'Error: ' . $e . PHP_EOL;
+//           $response = $request->response('',$e->getCode() ?: 1,iconv('gbk', 'utf-8', $e->getMessage()));
+//       } catch (Error $error) {
+//           Log::error('error',[$error]);
+//           $response = $request->response('',$error->getCode() ?: 1,$error->getMessage());
+//       }
+//
+//
+//
+//       Log::info('response',$response);
+//       // 向当前client_id发送数据
+//       Gateway::sendToClient($client_id, json_encode($response));
 
-       try {
-           $res = Route::dispatch($request);
-           $response = $request->response($res['data'],$res['code'],$res['msg']);
-       } catch (Exception $e) {
-           Log::error('exception',[$e]);
-           //echo 'Error: ' . $e . PHP_EOL;
-           $response = $request->response('',$e->getCode() ?: 1,iconv('gbk', 'utf-8', $e->getMessage()));
-       } catch (Error $error) {
-           Log::error('error',[$error]);
-           $response = $request->response('',$error->getCode() ?: 1,$error->getMessage());
-       }
-
-
-
-       Log::info('response',$response);
-       // 向当前client_id发送数据
-       Gateway::sendToClient($client_id, json_encode($response));
-
+       App::run($client_id, $message);
    }
 
    /**

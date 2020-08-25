@@ -8,18 +8,18 @@ class Redis
 {
 
     private static $_instance; //存储对象
-    private function __construct($redisConfig ){
-
+    private function __construct( ){
+        $config = Config::get('redis');
         self::$_instance = new \Redis();
         //从配置读取
-        self::$_instance->pconnect($redisConfig['host'], $redisConfig['port']);
-        self::$_instance->auth($redisConfig['auth']);
+        self::$_instance->pconnect($config['host'], $config['port']);
+        self::$_instance->auth($config['password']);
     }
 
-    public static function getInstance($redisConfig )
+    public static function getInstance( )
     {
         if (!self::$_instance) {
-           new self($redisConfig);
+           new self();
         }
         return self::$_instance;
 }

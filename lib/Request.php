@@ -61,13 +61,18 @@ class Request
     protected $ver;
 
 
-
+    /**
+     * 路由配置文件
+     * @var array
+     */
     protected static $routeConfig;
+
+    private static $_instance; //存储对象
 
     public function __construct(array $options = [])
     {
         $this->init($options);
-
+        self::$_instance = $this;
     }
 
 
@@ -80,7 +85,7 @@ class Request
         $this->ver =  $options['ver'] ?? '';
         $this->ip =  $this->ip();
         if (empty(self::$routeConfig))
-            self::$routeConfig  = include_once __DIR__.'/../route.php';//加载路由表
+            self::$routeConfig  = include_once __DIR__ . '/../config/route.php';//加载路由表
         if (array_key_exists($this->route, self::$routeConfig))//获取真实路径
             $this->route = self::$routeConfig[$this->route];
         $api = explode('/',$this->route);
@@ -439,6 +444,20 @@ class Request
             'msg' => $msg
         );
         return $response;
+    }
+
+    /**
+     * 静态获取，对应的非静态前加上_
+     * @param $method
+     * @param $args
+     * @return mixed
+     */
+    public static function __callStatic($method,$args)
+    {
+        $method = explode('_',$method)[1];
+        $res = call_user_func_array([self::$_instance, $method], $args);
+        return $res;
+
     }
 
 

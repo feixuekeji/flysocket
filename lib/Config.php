@@ -11,11 +11,14 @@ class Config
     protected static $config;
 
     // 加载配置文件
-    static function loadConf(){
-        $confFile = __DIR__.'/../config.php';
-        if (is_file($confFile)){
-            self::$config = include_once $confFile;
+    static function load(){
+        if (!self::$config){
+            $confFile = __DIR__ . '/../config/config.php';
+            if (is_file($confFile)){
+                self::$config = include_once $confFile;
+            }
         }
+
     }
 
 
@@ -29,7 +32,7 @@ class Config
      */
     public static function get($name = null, $default = null)
     {
-        self::loadConf();
+        self::load();
         // 无参数时获取所有
         if (empty($name)) {
             return self::$config;

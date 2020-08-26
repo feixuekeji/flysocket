@@ -40,10 +40,10 @@ class App
 
     public static function init()
     {
-        $redis = Redis::getInstance();
-        $cache = new Cache();
+        Redis::set('asd',123);
+        $cache = new Cache(Config::get('','cache'));
         //数据库初始化
-        Db::setConfig(Config::get('database'));
+        Db::setConfig(Config::get('','database'));
 
         $cache->set('a','ferg',86400);
         Db::setCache($cache);

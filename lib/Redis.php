@@ -49,6 +49,7 @@ class Redis
      */
     public static function __callStatic($method,$args)
     {
+        self::getInstance();
         return call_user_func_array([self::$_instance, $method], $args);
     }
 

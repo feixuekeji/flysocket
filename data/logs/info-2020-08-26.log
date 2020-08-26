@@ -1,0 +1,3 @@
+2020-08-26 10:02:31 test:INFO ==> LOG: request -- Request.php:97##init {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"id":1},"code":0,"msg":"success"} 
+2020-08-26 10:02:31 test:INFO ==> LOG: request -- Request.php:98##init {"module":"index","controller":"User","action":"getInfo","param":{"id":1},"api":"myinfo","route":"index/User/getInfo","ip":"127.0.0.1","app":"http://www.bejson.com","ver":88} 
+2020-08-26 10:02:32 test:INFO ==> LOG: response -- App.php:34##run {"app":"http://www.bejson.com","api":"myinfo","ver":88,"data":{"think\\model\\Collection":[{"Id":2,"name":"而言天人员"}]},"code":0,"msg":"success"} 

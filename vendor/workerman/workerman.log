@@ -15807,3 +15807,392 @@ Stack trace:
 #14 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
 #15 {main}
 2020-08-25 17:58:02 pid:1 Worker process terminated
+2020-08-26 14:17:48 pid:1 TypeError: Argument 1 passed to think\DbManager::setCache() must be an instance of Psr\SimpleCache\CacheInterface, instance of lib\Cache given in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\DbManager.php:163
+Stack trace:
+#0 [internal function]: think\DbManager->setCache(Object(lib\Cache))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\facade\Db.php(66): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(49): think\facade\Facade::__callStatic('setCache', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 14:17:49 pid:1 Worker process terminated
+2020-08-26 14:17:50 pid:1 TypeError: Argument 1 passed to think\DbManager::setCache() must be an instance of Psr\SimpleCache\CacheInterface, instance of lib\Cache given in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\DbManager.php:163
+Stack trace:
+#0 [internal function]: think\DbManager->setCache(Object(lib\Cache))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\facade\Db.php(66): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(49): think\facade\Facade::__callStatic('setCache', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 14:17:51 pid:1 Worker process terminated
+2020-08-26 14:17:52 pid:1 TypeError: Argument 1 passed to think\DbManager::setCache() must be an instance of Psr\SimpleCache\CacheInterface, instance of lib\Cache given in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\DbManager.php:163
+Stack trace:
+#0 [internal function]: think\DbManager->setCache(Object(lib\Cache))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\facade\Db.php(66): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(49): think\facade\Facade::__callStatic('setCache', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 14:17:53 pid:1 Worker process terminated
+2020-08-26 14:17:54 pid:1 TypeError: Argument 1 passed to think\DbManager::setCache() must be an instance of Psr\SimpleCache\CacheInterface, instance of lib\Cache given in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\DbManager.php:163
+Stack trace:
+#0 [internal function]: think\DbManager->setCache(Object(lib\Cache))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\facade\Db.php(66): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(49): think\facade\Facade::__callStatic('setCache', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 14:17:55 pid:1 Worker process terminated
+2020-08-26 14:17:56 pid:1 TypeError: Argument 1 passed to think\DbManager::setCache() must be an instance of Psr\SimpleCache\CacheInterface, instance of lib\Cache given in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\DbManager.php:163
+Stack trace:
+#0 [internal function]: think\DbManager->setCache(Object(lib\Cache))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\facade\Db.php(66): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(49): think\facade\Facade::__callStatic('setCache', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 14:17:57 pid:1 Worker process terminated
+2020-08-26 14:17:58 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 14:17:58 pid:1 TypeError: Argument 1 passed to think\DbManager::setCache() must be an instance of Psr\SimpleCache\CacheInterface, instance of lib\Cache given in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\DbManager.php:163
+Stack trace:
+#0 [internal function]: think\DbManager->setCache(Object(lib\Cache))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\facade\Db.php(66): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(49): think\facade\Facade::__callStatic('setCache', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 14:17:59 pid:1 Worker process terminated
+2020-08-26 14:18:00 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 14:18:00 pid:1 TypeError: Argument 1 passed to think\DbManager::setCache() must be an instance of Psr\SimpleCache\CacheInterface, instance of lib\Cache given in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\DbManager.php:163
+Stack trace:
+#0 [internal function]: think\DbManager->setCache(Object(lib\Cache))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\facade\Db.php(66): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(49): think\facade\Facade::__callStatic('setCache', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 14:18:01 pid:1 Worker process terminated
+2020-08-26 14:18:02 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 14:18:02 pid:1 TypeError: Argument 1 passed to think\DbManager::setCache() must be an instance of Psr\SimpleCache\CacheInterface, instance of lib\Cache given in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\DbManager.php:163
+Stack trace:
+#0 [internal function]: think\DbManager->setCache(Object(lib\Cache))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\facade\Db.php(66): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(49): think\facade\Facade::__callStatic('setCache', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 14:18:03 pid:1 Worker process terminated
+2020-08-26 14:18:04 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 14:18:04 pid:1 TypeError: Argument 1 passed to think\DbManager::setCache() must be an instance of Psr\SimpleCache\CacheInterface, instance of lib\Cache given in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\DbManager.php:163
+Stack trace:
+#0 [internal function]: think\DbManager->setCache(Object(lib\Cache))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\facade\Db.php(66): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(49): think\facade\Facade::__callStatic('setCache', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 14:18:05 pid:1 Worker process terminated
+2020-08-26 14:18:06 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 14:18:06 pid:1 TypeError: Argument 1 passed to think\DbManager::setCache() must be an instance of Psr\SimpleCache\CacheInterface, instance of lib\Cache given in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\DbManager.php:163
+Stack trace:
+#0 [internal function]: think\DbManager->setCache(Object(lib\Cache))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\facade\Db.php(66): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(49): think\facade\Facade::__callStatic('setCache', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 14:18:07 pid:1 Worker process terminated
+2020-08-26 14:18:08 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 14:18:08 pid:1 TypeError: Argument 1 passed to think\DbManager::setCache() must be an instance of Psr\SimpleCache\CacheInterface, instance of lib\Cache given in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\DbManager.php:163
+Stack trace:
+#0 [internal function]: think\DbManager->setCache(Object(lib\Cache))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\facade\Db.php(66): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(49): think\facade\Facade::__callStatic('setCache', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 14:18:09 pid:1 Worker process terminated
+2020-08-26 14:18:10 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 14:18:10 pid:1 TypeError: Argument 1 passed to think\DbManager::setCache() must be an instance of Psr\SimpleCache\CacheInterface, instance of lib\Cache given in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\DbManager.php:163
+Stack trace:
+#0 [internal function]: think\DbManager->setCache(Object(lib\Cache))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\facade\Db.php(66): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(49): think\facade\Facade::__callStatic('setCache', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 14:18:12 pid:1 Worker process terminated
+2020-08-26 14:18:12 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 14:18:14 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 14:18:16 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 16:46:33 pid:1 RedisException: Unable to find the socket transport "unix" - did you forget to enable it when you configured PHP? in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('', NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 16:46:34 pid:1 Worker process terminated
+2020-08-26 16:46:35 pid:1 RedisException: Unable to find the socket transport "unix" - did you forget to enable it when you configured PHP? in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('', NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 16:46:36 pid:1 Worker process terminated
+2020-08-26 16:46:37 pid:1 RedisException: Unable to find the socket transport "unix" - did you forget to enable it when you configured PHP? in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('', NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 16:46:38 pid:1 Worker process terminated
+2020-08-26 16:46:39 pid:1 RedisException: Unable to find the socket transport "unix" - did you forget to enable it when you configured PHP? in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('', NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 16:46:40 pid:1 Worker process terminated
+2020-08-26 16:46:41 pid:1 RedisException: Unable to find the socket transport "unix" - did you forget to enable it when you configured PHP? in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('', NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 16:46:42 pid:1 Worker process terminated
+2020-08-26 16:46:43 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 16:46:43 pid:1 RedisException: Unable to find the socket transport "unix" - did you forget to enable it when you configured PHP? in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('', NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 16:46:44 pid:1 Worker process terminated
+2020-08-26 16:46:45 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 16:46:45 pid:1 RedisException: Unable to find the socket transport "unix" - did you forget to enable it when you configured PHP? in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('', NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 16:46:46 pid:1 Worker process terminated
+2020-08-26 16:46:47 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 16:46:47 pid:1 RedisException: Unable to find the socket transport "unix" - did you forget to enable it when you configured PHP? in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('', NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 16:46:48 pid:1 Worker process terminated
+2020-08-26 16:46:49 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 16:46:49 pid:1 RedisException: Unable to find the socket transport "unix" - did you forget to enable it when you configured PHP? in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('', NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 16:46:50 pid:1 Worker process terminated
+2020-08-26 16:46:51 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 16:46:51 pid:1 RedisException: Unable to find the socket transport "unix" - did you forget to enable it when you configured PHP? in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('', NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 16:46:52 pid:1 Worker process terminated
+2020-08-26 16:46:53 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 16:46:53 pid:1 RedisException: Unable to find the socket transport "unix" - did you forget to enable it when you configured PHP? in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('', NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#4 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2020-08-26 16:46:54 pid:1 Worker process terminated
+2020-08-26 16:46:55 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 16:46:57 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 16:46:59 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 16:47:01 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-26 16:47:03 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html

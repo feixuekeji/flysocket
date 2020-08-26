@@ -11,9 +11,26 @@ use Psr\SimpleCache\CacheInterface as Psr16CacheInterface;
  */
 class Cache implements Psr16CacheInterface
 {
+    /**
+     * 驱动句柄
+     * @var object
+     */
+    protected $handler = null;
 
-    public function __construct( ){
-
+    /**
+     * 缓存参数
+     * @var array
+     */
+    protected $options = [
+        'expire'     => 0,
+        'prefix'     => '',
+        'serialize'  => true,
+    ];
+    public function __construct($options = []){
+        if (!empty($options)) {
+            $this->options = array_merge($this->options, $options);
+        }
+        $this->handler = Redis::getInstance();
     }
 
 
@@ -24,23 +41,45 @@ class Cache implements Psr16CacheInterface
     public function get($key, $default = null)
     {
 
-        $value = Redis::get(unserialize($key));
-        if ($value)
-            return $value;
-        return $default;
+        $value = $this->handler->get($key);
+        if (is_null($value) || false === $value) {
+            return $default;
+        }
+
+        return $this->unserialize($value);
     }
 
     /**
-     * {@inheritdoc}
+     * 写入缓存
+     * @access public
+     * @param  string            $name 缓存变量名
+     * @param  mixed             $value  存储数据
+     * @param  integer|\DateTime $expire  有效时间（秒）
+     * @return boolean
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
-    public function set($key, $value, $ttl = null)
+    public function set($name, $value, $expire = null)
     {
+        if (is_null($expire)) {
+            $expire = $this->options['expire'];
+        }
+        $value = $this->serialize($value);
+        $key    = $this->getCacheKey($name);
+        if ($expire) {
+            $result = $this->handler->setex($key, $expire, $value);
+        } else {
+            $result = $this->handler->set($key, $value);
+        }
+        return $result;
 
-        return $this->setMultiple([$key => $value], $ttl);
     }
 
     /**
-     * {@inheritdoc}
+     * 批量获取
+     * @param iterable $keys
+     * @param null $default
+     * @return array|iterable
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function getMultiple($keys, $default = null)
     {
@@ -56,26 +95,51 @@ class Cache implements Psr16CacheInterface
     }
 
     /**
-     * {@inheritdoc}
+     *批量设置
+     * @param iterable $values
+     * @param null $expire
+     * @return bool
+     * @throws \Exception
+     * @author xxf
+     * @date 2020-08-26 15:37
      */
-    public function setMultiple($values, $ttl = null)
+    public function setMultiple($values, $expire = null)
     {
         if (!\is_array($values)) {
             throw new \Exception(sprintf('Cache values must be array or Traversable, "%s" given', \is_object($values) ? \get_class($values) : \gettype($values)));
         }
-
+        if (is_null($expire)) {
+            $expire = $this->options['expire'];
+        }
         try {
             foreach ($values as $key => $value) {
                 if (\is_int($key)) {
                     $key = (string) $key;
                 }
-                Redis::set($key,serialize($value),$ttl);
+                $this->set($key,$value,$expire);
             }
             return true;
         } catch (\Exception $e) {
             return false;
         }
 
+    }
+
+    /**
+     * 删除缓存
+     * @access public
+     * @param  string $name 缓存变量名
+     * @return boolean
+     */
+    public function delete($name)
+    {
+        $key = $this->getCacheKey($name);
+        try {
+            $this->handler->del($key);
+            return true;
+        } catch (\Exception $e) {
+            return false;
+        }
     }
 
     /**
@@ -86,8 +150,12 @@ class Cache implements Psr16CacheInterface
        if (!\is_array($keys)) {
             throw new Exception(sprintf('Cache keys must be array or Traversable, "%s" given', \is_object($keys) ? \get_class($keys) : \gettype($keys)));
         }
+       foreach ($keys as &$item){
+           $item = $this->getCacheKey($item);
+       }
+
         try {
-            Redis::delete($keys);
+            $this->handler->del($keys);
             return true;
         } catch (\Exception $e) {
             return false;
@@ -97,25 +165,81 @@ class Cache implements Psr16CacheInterface
 
     }
 
+    /**
+     * 清除缓存
+     * @access public
+     * @param  string $tag 标签名
+     * @return boolean
+     */
     public function clear()
     {
-
+        return $this->handler->flushDB();
     }
 
-    public function delete($key)
+
+
+
+    /**
+     * 判断缓存
+     * @access public
+     * @param  string $name 缓存变量名
+     * @return bool
+     */
+    public function has($name)
     {
-        try {
-            Redis::delete($key);
-            return true;
-        } catch (\Exception $e) {
-            return false;
+        $key = $this->getCacheKey($name);
+        return $this->handler->exists($key);
+    }
+
+
+    /**
+     * 序列化数据
+     * @access protected
+     * @param  mixed $data
+     * @return string
+     */
+    protected function serialize($data)
+    {
+        if (is_scalar($data) || !$this->options['serialize']) {
+            return $data;
+        }
+        $data = 'serialize:'.unserialize($data);
+        return $data;
+    }
+
+    /**
+     * 反序列化数据
+     * @access protected
+     * @param  string $data
+     * @return mixed
+     */
+    protected function unserialize($data)
+    {
+        if ($this->options['serialize'] && 0 === strpos($data, 'serialize:')) {
+            return unserialize(substr($data, 10));
+        } else {
+            return $data;
         }
     }
-    public function has($key)
+
+    /**
+     * 获取实际的缓存标识
+     * @access protected
+     * @param  string $name 缓存名
+     * @return string
+     */
+    protected function getCacheKey($name)
     {
-        $value = Redis::get($key);
-        if ($value)
-            return true;
-        return false;
+        return $this->options['prefix'] . $name;
     }
+
+
+    public static function __callStatic($method,$args)
+    {
+        $method = explode('_',$method)[1];
+        $res = call_user_func_array([self, $method], $args);
+        return $res;
+
+    }
+
 }

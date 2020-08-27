@@ -34,7 +34,8 @@ return [
     ],
     //密码盐
     'password_salt' => 'erigtjoerjhw',
-
+    // 默认全局过滤方法 用逗号分隔多个
+    'default_filter'         => '',
 
     //redis配置
     'redis'            => [

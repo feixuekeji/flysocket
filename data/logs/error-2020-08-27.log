@@ -23,3 +23,7 @@
 2020-08-27 12:36:23 test:ERROR ==> LOG: error -- App.php:32##run ["[object] (Error(code: 0): Class 'think\\exception\\ClassNotFoundException' not found at D:\\phpstudy_pro\\WWW\\GatewayWorker\\lib\\Container.php:427)"] 
 2020-08-27 13:53:10 test:ERROR ==> LOG: error -- App.php:33##run ["[object] (Error(code: 0): Using $this when not in object context at D:\\phpstudy_pro\\WWW\\GatewayWorker\\lib\\Container.php:288)"] 
 2020-08-27 13:53:35 test:ERROR ==> LOG: error -- App.php:33##run ["[object] (Error(code: 0): Using $this when not in object context at D:\\phpstudy_pro\\WWW\\GatewayWorker\\lib\\Container.php:288)"] 
+2020-08-27 16:28:03 test:ERROR ==> LOG: error -- App.php:33##run ["[object] (TypeError(code: 0): Argument 1 passed to lib\\Controller::__construct() must be an instance of lib\\App or null, instance of lib\\Request given, called in D:\\phpstudy_pro\\WWW\\GatewayWorker\\lib\\Route.php on line 19 at D:\\phpstudy_pro\\WWW\\GatewayWorker\\lib\\Controller.php:20)"] 
+2020-08-27 16:36:00 test:ERROR ==> LOG: exception -- App.php:29##run ["[object] (Exception(code: 100): api  is not exists at D:\\phpstudy_pro\\WWW\\GatewayWorker\\lib\\Request.php:93)"] 
+2020-08-27 16:36:23 test:ERROR ==> LOG: exception -- App.php:29##run ["[object] (Exception(code: 100): api  is not exists at D:\\phpstudy_pro\\WWW\\GatewayWorker\\lib\\Request.php:93)"] 
+2020-08-27 17:14:23 test:ERROR ==> LOG: error -- App.php:33##run ["[object] (Error(code: 0): Using $this when not in object context at D:\\phpstudy_pro\\WWW\\GatewayWorker\\lib\\Request.php:176)"] 

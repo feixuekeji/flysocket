@@ -59,6 +59,11 @@ class Request
      * @var array
      */
     protected $ver;
+    /**
+     * 全局过滤规则
+     * @var array
+     */
+    protected $filter;
 
 
     /**
@@ -78,6 +83,7 @@ class Request
 
     public function init(array $options = [])
     {
+        $this->filter = Config::get('default_filter');
         $this->param = $options['data'] ?? [];
         $this->api =  $options['api'] ?? '';
         $this->route =  $options['api'] ?? '';
@@ -131,6 +137,29 @@ class Request
     public function ver()
     {
         return $this->ver;
+    }
+
+
+    /**
+     * 设置请求数据
+     * @access public
+     * @param  string    $name  参数名
+     * @param  mixed     $value 值
+     */
+    public function __set($name, $value)
+    {
+        return $this->param[$name] = $value;
+    }
+
+    /**
+     * 获取请求数据的值
+     * @access public
+     * @param  string $name 参数名
+     * @return mixed
+     */
+    public function __get($name)
+    {
+        return $this->param($name);
     }
 
     /**
@@ -243,6 +272,7 @@ class Request
         if (is_null($filter)) {
             $filter = [];
         } else {
+            $filter = $filter ?: $this->filter;
             if (is_string($filter) && false === strpos($filter, '/')) {
                 $filter = explode(',', $filter);
             } else {
@@ -330,6 +360,63 @@ class Request
                 break;
         }
     }
+
+    /**
+     * 获取指定的参数
+     * @access public
+     * @param  string|array  $name 变量名
+     * @return mixed
+     */
+    public function only($name)
+    {
+        $param = $this->param;
+
+        if (is_string($name)) {
+            $name = explode(',', $name);
+        }
+
+        $item = [];
+        foreach ($name as $key => $val) {
+
+            if (is_int($key)) {
+                $default = null;
+                $key     = $val;
+            } else {
+                $default = $val;
+            }
+
+            if (isset($param[$key])) {
+                $item[$key] = $param[$key];
+            } elseif (isset($default)) {
+                $item[$key] = $default;
+            }
+        }
+
+        return $item;
+    }
+
+    /**
+     * 排除指定参数获取
+     * @access public
+     * @param  string|array  $name 变量名
+     * @return mixed
+     */
+    public function except($name)
+    {
+        $param = $this->param;
+        if (is_string($name)) {
+            $name = explode(',', $name);
+        }
+
+        foreach ($name as $key) {
+            if (isset($param[$key])) {
+                unset($param[$key]);
+            }
+        }
+
+        return $param;
+    }
+
 
     /**
      * 设置当前的模块名

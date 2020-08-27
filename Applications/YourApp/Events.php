@@ -80,7 +80,6 @@ class Events
     */
    public static function onMessage($client_id, $message)
    {
-       echo $client_id;
        if ($message == 'ping')
            return;
 //       $message = json_decode($message,true) ?? [];

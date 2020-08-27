@@ -9,6 +9,17 @@
     }
 }
 
+{
+    "api": "index/user/getinfo1",
+    "app": "http://www.bejson.com",
+    "ver": 88,
+    "data": {
+        "id": 1,
+        "city": "江苏苏州",
+        "country": "中国"
+    }
+}
+
 
 {
     "api": "admin/admin/getInfo",
@@ -177,13 +188,5 @@
                               "msg": "success"
                           }
 
-                              'redis'            => [
-                                  // 主机地址
 
-                                  'host' => '127.0.0.1',
-                                  //端口号
-                                  'port' => '6379',
-                                  // 密码
-                                  'password'    => '',
-                              ],
 

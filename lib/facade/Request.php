@@ -2,7 +2,7 @@
 
 namespace lib\facade;
 
-use think\Facade;
+use lib\Facade;
 
 /**
  * @see \think\Request
@@ -74,14 +74,15 @@ use think\Facade;
  * @method string cache(string $key, mixed $expire = null, array $except = [], string $tag = null) static 设置当前地址的请求缓存
  * @method string getCache() static 读取请求缓存设置
  */
-class Request
+class Request extends Facade
 {
-
-    public static function __callStatic($method,$args)
+    /**
+     * 获取当前Facade对应类名（或者已经绑定的容器对象标识）
+     * @access protected
+     * @return string
+     */
+    protected static function getFacadeClass()
     {
-        $method = explode('_',$method)[1];
-        $res = call_user_func_array([self::$_instance, $method], $args);
-        return $res;
-
+        return 'request';
     }
 }

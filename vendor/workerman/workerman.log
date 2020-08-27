@@ -16196,3 +16196,343 @@ Stack trace:
 2020-08-26 16:46:59 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
 2020-08-26 16:47:01 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
 2020-08-26 16:47:03 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-27 09:38:33 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(52): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::__callStatic('set', Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#5 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#13 {main}
+2020-08-27 09:38:34 pid:1 Worker process terminated
+2020-08-27 09:38:37 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(52): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::__callStatic('set', Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#5 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#13 {main}
+2020-08-27 09:38:38 pid:1 Worker process terminated
+2020-08-27 09:38:41 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(52): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::__callStatic('set', Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#5 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#13 {main}
+2020-08-27 09:38:41 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-27 09:38:42 pid:1 Worker process terminated
+2020-08-27 09:38:45 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-27 09:38:45 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(22): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(52): lib\Redis::getInstance()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(43): lib\Redis::__callStatic('set', Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(50): lib\App::init()
+#5 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#13 {main}
+2020-08-27 09:38:46 pid:1 Worker process terminated
+2020-08-27 09:38:49 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-27 10:33:31 pid:1 ArgumentCountError: Too few arguments to function lib\App::run(), 0 passed in D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php on line 53 and exactly 2 expected in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:12
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(53): lib\App::run()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-27 10:33:32 pid:1 Worker process terminated
+2020-08-27 10:33:33 pid:1 ArgumentCountError: Too few arguments to function lib\App::run(), 0 passed in D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php on line 53 and exactly 2 expected in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:12
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(53): lib\App::run()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-27 10:33:34 pid:1 Worker process terminated
+2020-08-27 10:33:35 pid:1 ArgumentCountError: Too few arguments to function lib\App::run(), 0 passed in D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php on line 53 and exactly 2 expected in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:12
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(53): lib\App::run()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-08-27 10:33:36 pid:1 Worker process terminated
+2020-08-27 10:37:32 pid:1 TypeError: Return value of think\db\PDOConnection::pdoQuery() must be of the type array, bool returned in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\db\PDOConnection.php:673
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\db\PDOConnection.php(889): think\db\PDOConnection->pdoQuery(Object(think\db\Query), Object(Closure))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\db\BaseQuery.php(1090): think\db\PDOConnection->select(Object(think\db\Query))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\index\model\User.php(14): think\db\BaseQuery->select()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\index\controller\User.php(16): Applications\index\model\User->getInfo(1)
+#4 [internal function]: Applications\index\controller\User->getInfo(Object(lib\Request))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Route.php(20): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(24): lib\Route::dispatch(Object(lib\Request))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(112): lib\App::run('7f0000010b54000...', Array)
+#8 [internal function]: Events::onMessage('7f0000010b54000...', '{\n             ...')
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n             ...')
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #90)
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#18 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#19 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#20 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#21 {main}
+2020-08-27 10:37:32 pid:1 Worker process terminated
+2020-08-27 10:38:55 pid:1 TypeError: Return value of think\db\PDOConnection::pdoQuery() must be of the type array, bool returned in D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\db\PDOConnection.php:673
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\db\PDOConnection.php(889): think\db\PDOConnection->pdoQuery(Object(think\db\Query), Object(Closure))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\vendor\topthink\think-orm\src\db\BaseQuery.php(1090): think\db\PDOConnection->select(Object(think\db\Query))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\index\model\User.php(14): think\db\BaseQuery->select()
+#3 D:\phpstudy_pro\WWW\GatewayWorker\Applications\index\controller\User.php(16): Applications\index\model\User->getInfo(1)
+#4 [internal function]: Applications\index\controller\User->getInfo(Object(lib\Request))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Route.php(20): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(24): lib\Route::dispatch(Object(lib\Request))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(112): lib\App::run('7f0000010b54000...', Array)
+#8 [internal function]: Events::onMessage('7f0000010b54000...', '{\n             ...')
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n             ...')
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #89)
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#18 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#19 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#20 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#21 {main}
+2020-08-27 10:38:55 pid:1 Worker process terminated
+2020-08-27 11:02:09 pid:1 TypeError: Argument 1 passed to lib\Route::dispatch() must be an instance of lib\Request, instance of lib\App given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php on line 25 and defined in D:\phpstudy_pro\WWW\GatewayWorker\lib\Route.php:12
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(25): lib\Route::dispatch(Object(lib\App))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(112): lib\App::run('7f0000010b54000...', Array)
+#2 [internal function]: Events::onMessage('7f0000010b54000...', '{\n             ...')
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n             ...')
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #90)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#15 {main}
+2020-08-27 11:02:09 pid:1 Worker process terminated
+2020-08-27 11:02:57 pid:1 Error: Class 'lib\Loader' not found in D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php:466
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(437): lib\Container->bindParams(Object(ReflectionMethod), Array)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(284): lib\Container->invokeClass('lib\\Request', Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(281): lib\Container->make('lib\\Request', Array, false)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(132): lib\Container->make('request', Array, false)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(17): lib\Container::get('request', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(112): lib\App::run('7f0000010b54000...', Array)
+#6 [internal function]: Events::onMessage('7f0000010b54000...', '{\n             ...')
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n             ...')
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #90)
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#18 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#19 {main}
+2020-08-27 11:02:57 pid:1 Worker process terminated
+2020-08-27 11:06:46 pid:1 Error: Class 'lib\seif' not found in D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php:466
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(437): lib\Container->bindParams(Object(ReflectionMethod), Array)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(284): lib\Container->invokeClass('lib\\Request', Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(281): lib\Container->make('lib\\Request', Array, false)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(132): lib\Container->make('request', Array, false)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(17): lib\Container::get('request', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(112): lib\App::run('7f0000010b54000...', Array)
+#6 [internal function]: Events::onMessage('7f0000010b54000...', '{\n             ...')
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n             ...')
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #91)
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#18 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#19 {main}
+2020-08-27 11:06:46 pid:1 Worker process terminated
+2020-08-27 11:13:35 pid:1 ParseError: syntax error, unexpected 'return' (T_RETURN) in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:49
+Stack trace:
+#0 [internal function]: lib\Autoloader::load('lib\\Cache')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(45): spl_autoload_call('lib\\Cache')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(53): lib\App::init()
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-27 11:13:36 pid:1 Worker process terminated
+2020-08-27 11:13:37 pid:1 ParseError: syntax error, unexpected 'return' (T_RETURN) in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:49
+Stack trace:
+#0 [internal function]: lib\Autoloader::load('lib\\Cache')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(45): spl_autoload_call('lib\\Cache')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(53): lib\App::init()
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-27 11:13:38 pid:1 Worker process terminated
+2020-08-27 11:13:39 pid:1 ParseError: syntax error, unexpected 'return' (T_RETURN) in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:49
+Stack trace:
+#0 [internal function]: lib\Autoloader::load('lib\\Cache')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(45): spl_autoload_call('lib\\Cache')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(53): lib\App::init()
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-27 11:13:40 pid:1 Worker process terminated
+2020-08-27 11:13:41 pid:1 ParseError: syntax error, unexpected 'return' (T_RETURN) in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:49
+Stack trace:
+#0 [internal function]: lib\Autoloader::load('lib\\Cache')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(45): spl_autoload_call('lib\\Cache')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(53): lib\App::init()
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-27 11:13:42 pid:1 Worker process terminated
+2020-08-27 11:13:43 pid:1 ParseError: syntax error, unexpected 'return' (T_RETURN) in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:49
+Stack trace:
+#0 [internal function]: lib\Autoloader::load('lib\\Cache')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(45): spl_autoload_call('lib\\Cache')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(53): lib\App::init()
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-27 11:13:44 pid:1 Worker process terminated
+2020-08-27 11:13:45 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-27 11:13:45 pid:1 ParseError: syntax error, unexpected 'return' (T_RETURN) in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:49
+Stack trace:
+#0 [internal function]: lib\Autoloader::load('lib\\Cache')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(45): spl_autoload_call('lib\\Cache')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(53): lib\App::init()
+#3 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2020-08-27 11:13:46 pid:1 Worker process terminated
+2020-08-27 11:13:47 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-08-27 11:14:46 pid:1 Error: Class '\Applications\admin\controller\Logccin' not found in D:\phpstudy_pro\WWW\GatewayWorker\lib\Route.php:19
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(25): lib\Route::dispatch(Object(lib\Request))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(112): lib\App::run('7f0000010b54000...', Array)
+#2 [internal function]: Events::onMessage('7f0000010b54000...', '{\n    "api": "a...')
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n    "api": "a...')
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #90)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#15 {main}
+2020-08-27 11:14:46 pid:1 Worker process terminated

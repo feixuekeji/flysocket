@@ -38,14 +38,13 @@ class Cache implements Psr16CacheInterface
     /**
      * {@inheritdoc}
      */
-    public function get($key, $default = null)
+    public function get($name, $default = null)
     {
-
+        $key    = $this->getCacheKey($name);
         $value = $this->handler->get($key);
         if (is_null($value) || false === $value) {
             return $default;
         }
-
         return $this->unserialize($value);
     }
 
@@ -203,7 +202,7 @@ class Cache implements Psr16CacheInterface
         if (is_scalar($data) || !$this->options['serialize']) {
             return $data;
         }
-        $data = 'serialize:'.unserialize($data);
+        $data = 'serialize:'.serialize($data);
         return $data;
     }
 
@@ -231,15 +230,6 @@ class Cache implements Psr16CacheInterface
     protected function getCacheKey($name)
     {
         return $this->options['prefix'] . $name;
-    }
-
-
-    public static function __callStatic($method,$args)
-    {
-        $method = explode('_',$method)[1];
-        $res = call_user_func_array([self, $method], $args);
-        return $res;
-
     }
 
 }

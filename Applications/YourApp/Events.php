@@ -30,6 +30,7 @@ use Clue\React\Redis\Client;
 use Workerman\Worker;
 use lib\Cache;
 use lib\App;
+use lib\Container;
 
 // 自动加载类
 require_once __DIR__ . '/../../vendor/autoload.php';
@@ -47,7 +48,9 @@ class Events
      */
     public static function onWorkerStart($worker)
     {
-        App::init();
+        //App::init();
+        // 执行应用并响应
+        Container::get('app')->init();
         //Redis初始化
         global $factory;
         $loop    = Worker::getEventLoop();
@@ -77,6 +80,7 @@ class Events
     */
    public static function onMessage($client_id, $message)
    {
+       echo $client_id;
        if ($message == 'ping')
            return;
 //       $message = json_decode($message,true) ?? [];

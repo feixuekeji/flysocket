@@ -15,5 +15,8 @@ class User
         $model = new M();
         $res = $model->getInfo($id);
         return ['data' =>$res ,'code'=> 0, 'msg' => 'success'];
+
     }
+
+
 }

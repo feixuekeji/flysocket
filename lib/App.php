@@ -13,18 +13,9 @@ class App  extends Container
     {
         $message = json_decode($message,true) ?? [];
         try {
-            //$request = new Request($message);
             $request = Container::get('request',[$message]);
-        } catch (Exception $e){
-            $response = ['data' => '','code' => $e->getCode(),'msg' => $e->getMessage()];
-            Gateway::sendToClient($client_id, json_encode($response));
-            return;
-        }
-
-        try {
             $res = Route::dispatch($request);
             $response = $request->response($res['data'],$res['code'],$res['msg']);
-            Container::remove('request');
         } catch (Exception $e) {
             Log::error('exception',[$e]);
             //echo 'Error: ' . $e . PHP_EOL;
@@ -36,6 +27,8 @@ class App  extends Container
         Log::info('response',$response);
         // 向当前client_id发送数据
         Gateway::sendToClient($client_id, json_encode($response));
+        //清空request
+        Container::remove('request');
 
     }
 

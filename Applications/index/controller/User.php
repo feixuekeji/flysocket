@@ -20,7 +20,6 @@ class User extends Controller
 
     public function getInfo1()
     {
-        var_dump($this->request);
         return ['data' =>'' ,'code'=> 0, 'msg' => 'success'];
 
     }

@@ -91,16 +91,13 @@ class Request
         $this->ver =  $options['ver'] ?? '';
         $this->ip =  $this->ip();
         if (empty(self::$routeConfig))
-            self::$routeConfig  = include_once __DIR__ . '/../config/route.php';//加载路由表
+            self::$routeConfig  = Config::get('','route');//加载路由表
         if (array_key_exists($this->route, self::$routeConfig))//获取真实路径
             $this->route = self::$routeConfig[$this->route];
         $api = explode('/',$this->route);
-        if (count($api) < 3)
-            throw new \Exception('api  is not exists',100);
-        $this->setModule($api[0]);
-        $this->setController($api[1]);
-        $this->setAction($api[2]);
-        Log::info('request',$options);
+        $this->setModule($api[0] ?? '');
+        $this->setController($api[1] ?? '');
+        $this->setAction($api[2] ?? '');
         Log::info('request',get_object_vars($this));
 
 

@@ -16536,3 +16536,21 @@ Stack trace:
 #14 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
 #15 {main}
 2020-08-27 11:14:46 pid:1 Worker process terminated
+2020-08-28 10:46:59 pid:1 Error: Call to a member function response() on null in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:30
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(112): lib\App::run('7f0000010b54000...', Array)
+#1 [internal function]: Events::onMessage('7f0000010b54000...', '{\n    "api": "a...')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n    "api": "a...')
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #90)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2020-08-28 10:46:59 pid:1 Worker process terminated

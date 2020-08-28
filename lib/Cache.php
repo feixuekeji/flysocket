@@ -83,7 +83,7 @@ class Cache implements Psr16CacheInterface
     public function getMultiple($keys, $default = null)
     {
         if (!\is_array($keys)) {
-            throw new InvalidArgumentException(sprintf('Cache keys must be array or Traversable, "%s" given', \is_object($keys) ? \get_class($keys) : \gettype($keys)));
+            throw new \Exception(sprintf('Cache keys must be array or Traversable, "%s" given', \is_object($keys) ? \get_class($keys) : \gettype($keys)));
         }
         $result = [];
         foreach ($keys as $key) {

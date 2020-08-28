@@ -8,7 +8,7 @@ class User extends Model
 {
     public function getInfo($id)
     {
-        $res = $this->cache(true)->select();
+        $res = $this->where('id',$id)->cache(true)->find();
         return $res;
     }
 }

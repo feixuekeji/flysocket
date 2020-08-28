@@ -1,6 +1,11 @@
 <?php
 namespace lib;
-
+/**
+ * Class Request 请求类
+ * @package lib
+ * @author xingxiong.fei@163.com
+ * @date 2020-08-28 11:29
+ */
 class Request
 {
 
@@ -31,37 +36,60 @@ class Request
 
     /**
      * 当前请求api
-     * @var array
+     * @var string
      */
     protected $api;
 
     /**
      * 当前请求路由地址
-     * @var array
+     * @var string
      */
     protected $route;
 
     /**
-     * 当前请求ip地址
-     * @var array
+     * 客户端p地址
+     * @var string
      */
     protected $ip;
 
     /**
+     * 客户端端口
+     * @var string
+     */
+    protected $port;
+
+    /**
+     * 当前服务ip地址
+     * @var string
+     */
+    protected $gatewayIp;
+
+    /**
+     * 当前请求端口
+     * @var string
+     */
+    protected $gatewayPort;
+
+    /**
+     * 当前请求客户端id
+     * @var string
+     */
+    protected $clientId;
+
+    /**
      * 当前请求app
-     * @var array
+     * @var string
      */
     protected $app;
 
-
     /**
      * 当前请求版本号
-     * @var array
+     * @var string
      */
     protected $ver;
     /**
      * 全局过滤规则
-     * @var array
+     * @var string
      */
     protected $filter;
 
@@ -89,7 +117,6 @@ class Request
         $this->route =  $options['api'] ?? '';
         $this->app =  $options['app'] ?? '';
         $this->ver =  $options['ver'] ?? '';
-        $this->ip =  $this->ip();
         if (empty(self::$routeConfig))
             self::$routeConfig  = Config::get('','route');//加载路由表
         if (array_key_exists($this->route, self::$routeConfig))//获取真实路径
@@ -98,22 +125,25 @@ class Request
         $this->setModule($api[0] ?? '');
         $this->setController($api[1] ?? '');
         $this->setAction($api[2] ?? '');
+        $this->ip =  $this->ip();
+        $this->setPort();
+        $this->setGatewayIp();
+        $this->setGatewayPort();
+        $this->setClientId();
         Log::info('request',get_object_vars($this));
 
 
     }
 
 
-    /**
-     * @return array
-     */
+
     public function api()
     {
         return $this->api;
     }
 
     /**
-     * @return array
+     * @return string
      */
     public function route()
     {
@@ -121,7 +151,7 @@ class Request
     }
 
     /**
-     * @return array
+     * @return string
      */
     public function app()
     {
@@ -129,7 +159,7 @@ class Request
     }
 
     /**
-     * @return array
+     * @return string
      */
     public function ver()
     {
@@ -516,6 +546,75 @@ class Request
 
         return $ip[$type];
     }
+
+    /**
+     * @return string
+     */
+    public function port(): string
+    {
+        return $this->port;
+    }
+
+    /**
+     * @param string $port
+     */
+    public function setPort(): void
+    {
+        $this->port = $_SERVER['REMOTE_PORT'];
+    }
+
+    /**
+     * @return string
+     */
+    public function gatewayIp(): string
+    {
+        return $this->gatewayIp;
+    }
+
+    /**
+     * @param string $gatewayIp
+     */
+    public function setGatewayIp(): void
+    {
+        $this->gatewayIp = $_SERVER['GATEWAY_ADDR'];
+    }
+
+    /**
+     * @return string
+     */
+    public function gatewayPort(): string
+    {
+        return $this->gatewayPort;
+    }
+
+    /**
+     * @param string $gatewayPort
+     */
+    public function setGatewayPort(): void
+    {
+        $this->gatewayPort = $_SERVER['GATEWAY_PORT'];
+    }
+
+    /**
+     * @return string
+     */
+    public function clientId(): string
+    {
+        return $this->clientId;
+    }
+
+    /**
+     * @param string $clientId
+     */
+    public function setClientId(): void
+    {
+        $this->clientId = $_SERVER['GATEWAY_CLIENT_ID'];
+    }
+
+
+
+
+
 
 
     public function response($data,$code,$msg)

@@ -1,5 +1,5 @@
 <?php
-namespace Applications\admin\validate;
+namespace application\admin\validate;
 use lib\Validate;
 class Admin extends Validate
 {

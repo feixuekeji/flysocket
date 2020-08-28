@@ -1,7 +1,7 @@
 <?php
-namespace Applications\admin\controller;
+namespace application\admin\controller;
 use lib\Request;
-use Applications\admin\model\Menu as M;
+use application\admin\model\Menu as M;
 
 class Menu extends Base
 {

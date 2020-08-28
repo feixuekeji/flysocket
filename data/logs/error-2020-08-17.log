@@ -1,1 +1,0 @@
-2020-08-17 10:53:49 test:ERROR ==> LOG: exception -- Events.php:95##onMessage ["[object] (PDOException(code: 2002): SQLSTATE[HY000] [2002] ����Ŀ����������ܾ����޷����ӡ�\r\n at D:\\phpstudy_pro\\WWW\\GatewayWorker\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:568)"] 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Applications\admin\model;
+namespace application\admin\model;
 
 use lib\Config;
 use lib\Token;
@@ -94,7 +94,7 @@ class Admin extends Model
             'create_time' => time(),
             'role_id' => intval($input['role_id'] ?? 0),
         ];
-        $validate = new \Applications\admin\validate\Admin();
+        $validate = new \application\admin\validate\Admin();
         if (!$validate->check($addData))
             return ['data' => '', 'code' => 300, 'msg' => $validate->getError()];
         $roleInfo = Role::where(['id'=>$input['role_id'],'status' => 1])->find();
@@ -125,7 +125,7 @@ class Admin extends Model
             //如果输入了新密码
             $addData['password'] = md5(base64_encode($input['password'].$salt));
         }
-        $validate = new \Applications\admin\validate\Admin();
+        $validate = new \application\admin\validate\Admin();
         if (!$validate->check($addData))
             return ['data' => '', 'code' => 300, 'msg' => $validate->getError()];
         $roleInfo = Role::where(['id'=>$input['role_id'],'status' => 1])->find();

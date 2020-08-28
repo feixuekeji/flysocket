@@ -1,6 +1,6 @@
 <?php
 
-namespace Applications\admin\model;
+namespace application\admin\model;
 use think\facade\Db;
 use think\Model;
 
@@ -31,7 +31,7 @@ class Role extends Model
             'create_time' => time(),
             'status' => $data['status'] ?? 1,
         ];
-        $validate = new \Applications\admin\validate\Role();
+        $validate = new \application\admin\validate\Role();
 
         if (!$validate->check($roleData))
             return ['data' => '', 'code' => 300, 'msg' => $validate->getError()];
@@ -62,7 +62,7 @@ class Role extends Model
         $info = $this->where('id',$id)->find($id);
         if (empty($info))
             return ['data' => '', 'code' => 300, 'msg' => '不存在此id'];
-        $validate = new \Applications\admin\validate\Role();
+        $validate = new \application\admin\validate\Role();
         if (!$validate->check($roleData))
             return ['data' => '', 'code' => 300, 'msg' => $validate->getError()];
         $info->name = $data['name'];

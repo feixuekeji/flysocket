@@ -1,7 +1,7 @@
 <?php
-namespace Applications\admin\controller;
+namespace application\admin\controller;
 use lib\Request;
-use Applications\admin\model\Admin as M;
+use application\admin\model\Admin as M;
 
 class Admin extends Base
 {

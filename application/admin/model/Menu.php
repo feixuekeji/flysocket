@@ -1,6 +1,6 @@
 <?php
 
-namespace Applications\admin\model;
+namespace application\admin\model;
 use think\facade\Db;
 use \think\Model;
 
@@ -57,7 +57,7 @@ class Menu extends Model
         foreach ($list as $k => &$v) {
             foreach ($field as $item)
             {
-                if (!$v[$item])//菜单没有该功能，删除
+                if (!isset($v[$item]))//菜单没有该功能，删除
                     unset($v[$item]);
                 $v[$item] = 0;//初始权限设为空
             }

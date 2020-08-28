@@ -208,7 +208,7 @@ Stack trace:
 2020-08-10 14:59:36 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
 2020-08-10 14:59:36 pid:1 Error: Undefined class constant 'config' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Config.php:33
 Stack trace:
-#0 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\Events.php(44): lib\Config::get()
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\YourApp\Events.php(44): lib\Config::get()
 #1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
 #2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
 #3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
@@ -216,7 +216,7 @@ Stack trace:
 #5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
 #6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
 #7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
-#8 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
 #9 {main}
 2020-08-10 14:59:37 pid:1 Worker process terminated
 2020-08-10 14:59:38 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
@@ -4809,7 +4809,7 @@ Stack trace:
 2020-08-21 15:39:26 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
 2020-08-21 15:39:28 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
 2020-08-21 15:39:30 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-21 15:39:30 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-21 15:39:30 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:19
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(19): Redis->pconnect('', '6379')
@@ -4826,7 +4826,7 @@ Stack trace:
 #11 {main}
 2020-08-21 15:39:31 pid:1 Worker process terminated
 2020-08-21 15:39:32 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-21 15:39:40 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-21 15:39:40 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:19
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(19): Redis->pconnect('', '6379')
@@ -4843,7 +4843,7 @@ Stack trace:
 #11 {main}
 2020-08-21 15:39:41 pid:1 Worker process terminated
 2020-08-21 15:39:42 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-21 15:39:50 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-21 15:39:50 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:19
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(19): Redis->pconnect('', '6379')
@@ -4860,7 +4860,7 @@ Stack trace:
 #11 {main}
 2020-08-21 15:39:51 pid:1 Worker process terminated
 2020-08-21 15:39:52 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-21 15:40:00 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-21 15:40:00 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:19
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(19): Redis->pconnect('', '6379')
@@ -4875,7 +4875,7 @@ Stack trace:
 #9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
 #10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
 #11 {main}
-2020-08-21 15:40:12 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-21 15:40:12 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:19
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(19): Redis->pconnect('', '6379')
@@ -4892,7 +4892,7 @@ Stack trace:
 #11 {main}
 2020-08-21 15:40:13 pid:1 Worker process terminated
 2020-08-21 15:40:14 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-21 15:40:22 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-21 15:40:22 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:19
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(19): Redis->pconnect('', '6379')
@@ -4909,7 +4909,7 @@ Stack trace:
 #11 {main}
 2020-08-21 15:40:23 pid:1 Worker process terminated
 2020-08-21 15:40:24 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-21 15:40:32 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-21 15:40:32 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php:19
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(19): Redis->pconnect('', '6379')
@@ -11865,7 +11865,7 @@ Stack trace:
 #9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
 #10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
 #11 {main}
-2020-08-25 11:01:06 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:06 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -11881,7 +11881,7 @@ Stack trace:
 #10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
 #11 {main}
 2020-08-25 11:01:07 pid:1 Worker process terminated
-2020-08-25 11:01:09 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:09 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -11897,7 +11897,7 @@ Stack trace:
 #10 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
 #11 {main}
 2020-08-25 11:01:10 pid:1 Worker process terminated
-2020-08-25 11:01:13 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:13 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -11915,7 +11915,7 @@ Stack trace:
 2020-08-25 11:01:14 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
 2020-08-25 11:01:14 pid:1 Worker process terminated
 2020-08-25 11:01:17 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:01:17 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:17 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -11932,7 +11932,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:01:18 pid:1 Worker process terminated
 2020-08-25 11:01:21 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:01:21 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:21 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -11949,7 +11949,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:01:22 pid:1 Worker process terminated
 2020-08-25 11:01:25 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:01:25 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:25 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -11966,7 +11966,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:01:27 pid:1 Worker process terminated
 2020-08-25 11:01:29 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:01:30 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:30 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -11983,7 +11983,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:01:31 pid:1 Worker process terminated
 2020-08-25 11:01:33 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:01:34 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:34 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -12000,7 +12000,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:01:35 pid:1 Worker process terminated
 2020-08-25 11:01:37 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:01:38 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:38 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -12017,7 +12017,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:01:39 pid:1 Worker process terminated
 2020-08-25 11:01:42 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:01:42 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:42 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -12034,7 +12034,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:01:43 pid:1 Worker process terminated
 2020-08-25 11:01:46 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:01:46 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:46 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -12051,7 +12051,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:01:47 pid:1 Worker process terminated
 2020-08-25 11:01:50 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:01:50 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:50 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -12068,7 +12068,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:01:51 pid:1 Worker process terminated
 2020-08-25 11:01:54 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:01:54 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:54 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -12085,7 +12085,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:01:55 pid:1 Worker process terminated
 2020-08-25 11:01:58 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:01:58 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:01:58 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -12102,7 +12102,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:01:59 pid:1 Worker process terminated
 2020-08-25 11:02:02 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:02:02 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:02:02 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -12119,7 +12119,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:02:03 pid:1 Worker process terminated
 2020-08-25 11:02:06 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:02:06 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:02:06 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -12136,7 +12136,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:02:07 pid:1 Worker process terminated
 2020-08-25 11:02:10 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:02:10 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:02:10 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -12153,7 +12153,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:02:11 pid:1 Worker process terminated
 2020-08-25 11:02:14 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:02:14 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:02:14 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -12170,7 +12170,7 @@ Stack trace:
 #11 {main}
 2020-08-25 11:02:15 pid:1 Worker process terminated
 2020-08-25 11:02:18 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-25 11:02:18 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-25 11:02:18 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -16196,7 +16196,7 @@ Stack trace:
 2020-08-26 16:46:59 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
 2020-08-26 16:47:01 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
 2020-08-26 16:47:03 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-27 09:38:33 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-27 09:38:33 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -16214,7 +16214,7 @@ Stack trace:
 #12 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
 #13 {main}
 2020-08-27 09:38:34 pid:1 Worker process terminated
-2020-08-27 09:38:37 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-27 09:38:37 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -16232,7 +16232,7 @@ Stack trace:
 #12 D:\phpstudy_pro\WWW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
 #13 {main}
 2020-08-27 09:38:38 pid:1 Worker process terminated
-2020-08-27 09:38:41 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-27 09:38:41 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
@@ -16252,7 +16252,7 @@ Stack trace:
 2020-08-27 09:38:41 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
 2020-08-27 09:38:42 pid:1 Worker process terminated
 2020-08-27 09:38:45 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
-2020-08-27 09:38:45 pid:1 RedisException: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+2020-08-27 09:38:45 pid:1 RedisException: ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
  in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
 Stack trace:
 #0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')

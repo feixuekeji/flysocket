@@ -1,2 +1,2 @@
-php Applications\YourApp\start_register.php Applications\YourApp\start_gateway.php Applications\YourApp\start_businessworker.php Applications\YourApp\start_http_server.php  Applications\YourApp\start_text_gateway.php
+php application\worker\start_register.php application\worker\start_gateway.php application\worker\start_businessworker.php application\worker\start_http_server.php  application\worker\start_text_gateway.php
 pause

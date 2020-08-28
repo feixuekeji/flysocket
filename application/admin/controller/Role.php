@@ -1,7 +1,7 @@
 <?php
-namespace Applications\admin\controller;
+namespace application\admin\controller;
 use lib\Request;
-use Applications\admin\model\Role as M;
+use application\admin\model\Role as M;
 
 class Role extends Base
 {

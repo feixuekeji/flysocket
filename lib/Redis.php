@@ -13,7 +13,10 @@ class Redis
         self::$_instance = new \Redis();
         //从配置读取
         self::$_instance->pconnect($config['host'], $config['port']);
-        self::$_instance->auth($config['password']);
+        if ('' != $config['password']) {
+            self::$_instance->auth($config['password']);
+        }
+
     }
 
     public static function getInstance( )

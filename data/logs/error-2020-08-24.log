@@ -1,1 +1,0 @@
-2020-08-24 16:57:17 test:ERROR ==> LOG: error -- Events.php:110##onMessage ["[object] (TypeError(code: 0): Return value of think\\db\\PDOConnection::pdoQuery() must be of the type array, string returned at D:\\phpstudy_pro\\WWW\\GatewayWorker\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:673)"] 

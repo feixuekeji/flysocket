@@ -6,7 +6,7 @@ use Exception;
 use think\facade\Db;
 use \GatewayWorker\Lib\Gateway;
 //加载函数库
-require_once __DIR__ . '/../Applications/common.php';
+require_once __DIR__ . '/../application/common.php';
 class App  extends Container
 {
     public static function run($client_id, $message)

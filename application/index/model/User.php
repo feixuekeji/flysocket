@@ -1,6 +1,6 @@
 <?php
 
-namespace Applications\index\model;
+namespace application\index\model;
 
 use think\Model;
 

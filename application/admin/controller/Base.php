@@ -5,11 +5,7 @@ namespace application\admin\controller;
 use lib\Request;
 
 
-/**
- * 此类主要用于后台控制类的初始化操作
- * Class Base
- * @package app\common\controller
- */
+
 class Base
 {
     protected $adminInfo;

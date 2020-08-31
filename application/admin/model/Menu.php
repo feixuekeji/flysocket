@@ -57,9 +57,10 @@ class Menu extends Model
         foreach ($list as $k => &$v) {
             foreach ($field as $item)
             {
-                if (!isset($v[$item]))//菜单没有该功能，删除
+                if (empty($v[$item]))//菜单没有该功能，删除
                     unset($v[$item]);
-                $v[$item] = 0;//初始权限设为空
+                else
+                    $v[$item] = 0;//初始权限设为空
             }
         }
         $powerList = Db::table('role_power')->where('role_id',$roleId)->select();//权限列表

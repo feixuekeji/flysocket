@@ -49,7 +49,8 @@
      "ver": 88,
      "data": {
          "name": "admin333",
-         "password": "123456"
+         "password": "123456",
+         "role_id": 1
      }
  }
 
@@ -59,8 +60,7 @@
      "app": "http://www.bejson.com",
      "ver": 88,
      "data": {
-         "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTczOTI0NzYsIm5iZiI6MTU5NzM5MjQ3NiwiZXhwIjoxNTk3NDc4ODc2LCJkYXRhIjp7ImFkbWluSWQiOjF9fQ.-Hu4Vvh7Ns8G-N4NRDcGKcLTaZ74uaRCaL9ecuHBtpI",
-         "password": "123456"
+         "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTg4NDE5MTcsIm5iZiI6MTU5ODg0MTkxNywiZXhwIjoxNTk4OTI4MzE3LCJkYXRhIjp7ImFkbWluSWQiOjF9fQ.FawQ2DLnbgGiAoovpCHkrzVfakk8uHO2lZcNSwxD7tU"
      }
  }
 
@@ -70,7 +70,8 @@
       "app": "http://www.bejson.com",
       "ver": 88,
       "data": {
-          "page": 3
+          "page": 3,
+          "size":2
       }
   }
 
@@ -136,8 +137,6 @@
                 }
             ]
         },
-        "code": 0,
-        "msg": "success"
     }
 
         {

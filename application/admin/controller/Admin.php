@@ -25,8 +25,8 @@ class Admin extends Base
     {
         $size = $request->param('size/d',10);
         $page = $request->param('page/d',1);
-        $status = $request->post('status', 0);
-        $keyword = $request->post('keyword', '');
+        $status = $request->param('status', 0);
+        $keyword = $request->param('keyword', '');
         $where = [];
         $status > 0 && $where[] = array('a.status', '=', $status);
         if (!empty($keyword))

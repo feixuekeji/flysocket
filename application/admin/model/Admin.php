@@ -74,7 +74,7 @@ class Admin extends Model
         $list = $this
             ->field('a.*,r.name role_name')
             ->alias('a')
-            ->leftJoin('role r','a.role_id = a.id')
+            ->leftJoin('role r','a.role_id = r.id')
             ->where($where)
             ->order(['a.id' => 'desc'])
             ->paginate([

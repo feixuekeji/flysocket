@@ -17771,3 +17771,440 @@ Stack trace:
 #18 {main}
 2020-08-31 09:36:58 pid:1 Worker process terminated
 2020-08-31 09:37:01 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:23:16 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:23:17 pid:1 Worker process terminated
+2020-09-01 11:23:19 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:23:20 pid:1 Worker process terminated
+2020-09-01 11:23:23 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:23:24 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:23:24 pid:1 Worker process terminated
+2020-09-01 11:23:27 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:23:27 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:23:28 pid:1 Worker process terminated
+2020-09-01 11:23:31 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:23:31 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:23:32 pid:1 Worker process terminated
+2020-09-01 11:23:35 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:23:35 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:23:37 pid:1 Worker process terminated
+2020-09-01 11:23:39 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:23:39 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:23:40 pid:1 Worker process terminated
+2020-09-01 11:23:43 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:23:44 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:23:45 pid:1 Worker process terminated
+2020-09-01 11:23:47 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:23:48 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:23:49 pid:1 Worker process terminated
+2020-09-01 11:23:51 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-09-01 11:23:51 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-09-01 11:23:52 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:23:52 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:23:53 pid:1 Worker process terminated
+2020-09-01 11:23:55 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-09-01 11:23:55 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://doc2.workerman.net/send-buffer-to-worker-fail.html
+2020-09-01 11:23:56 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:23:56 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:23:57 pid:1 Worker process terminated
+2020-09-01 11:24:00 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:24:00 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:24:01 pid:1 Worker process terminated
+2020-09-01 11:24:04 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:24:04 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:24:05 pid:1 Worker process terminated
+2020-09-01 11:24:08 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:24:08 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:24:09 pid:1 Worker process terminated
+2020-09-01 11:24:12 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:24:12 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(53): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-01 11:24:13 pid:1 Worker process terminated
+2020-09-01 11:24:16 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 11:24:20 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-01 15:41:49 pid:1 Error: Class 'think\exception\ClassNotFoundException' not found in D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php:427
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Log', Array)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Log', Array, false)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('log', Array, false)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(54): lib\Container::get('log', Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(48): lib\App->init()
+#5 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#13 {main}
+2020-09-01 15:41:50 pid:1 Worker process terminated
+2020-09-01 15:43:16 pid:1 Error: Wrong parameters for Exception([string $message [, long $code [, Throwable $previous = NULL]]]) in D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php:427
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(427): Exception->__construct('class not exist...', 'lib\\Log')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Log', Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Log', Array, false)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('log', Array, false)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(54): lib\Container::get('log', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(48): lib\App->init()
+#6 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2020-09-01 15:43:17 pid:1 Worker process terminated
+2020-09-01 15:44:34 pid:1 Exception: class not exists: lib\Log in D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php:427
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Log', Array)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Log', Array, false)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('log', Array, false)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(54): lib\Container::get('log', Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(48): lib\App->init()
+#5 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#13 {main}
+2020-09-01 15:44:35 pid:1 Worker process terminated
+2020-09-01 16:24:50 pid:1 Error: Using $this when not in object context in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php:192
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(34): lib\Log::error('exception', Array)
+#1 [internal function]: lib\App->run('7f0000010b54000...', Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(123): call_user_func_array(Array, Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(107): lib\Facade::__callStatic('run', Array)
+#4 [internal function]: Events::onMessage('7f0000010b54000...', '{\n        "api"...')
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n        "api"...')
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #95)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#17 {main}
+2020-09-01 16:24:50 pid:1 Worker process terminated

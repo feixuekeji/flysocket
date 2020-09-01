@@ -130,7 +130,7 @@ class Request
         $this->setGatewayIp();
         $this->setGatewayPort();
         $this->setClientId();
-        Log::info('request',get_object_vars($this));
+        \lib\facade\Log::info('request',get_object_vars($this));
 
 
     }

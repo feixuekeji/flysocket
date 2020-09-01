@@ -20,16 +20,11 @@
 //declare(ticks=1);
 
 use \GatewayWorker\Lib\Gateway;
-use lib\Request;
-use lib\Route;
-use think\facade\Db;
-use lib\Config;
-use lib\Log;
+
 use Clue\React\Redis\Factory;
 use Clue\React\Redis\Client;
 use Workerman\Worker;
-use lib\Cache;
-use lib\App;
+use lib\facade\App;
 use lib\Container;
 
 // 自动加载类

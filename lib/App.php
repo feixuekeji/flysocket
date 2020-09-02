@@ -32,11 +32,10 @@ class App  extends Container
             $res = Route::dispatch($request);
             $response = $request->response($res['data'],$res['code'],$res['msg']);
         } catch (Exception $e) {
-            Log::error('exception',[$e]);
-            echo 'Error: ' . $e . PHP_EOL;
+            Error::exception($e);
             $response = $request->response('',$e->getCode() ?: 1,iconv('gbk', 'utf-8', $e->getMessage()));
         } catch (\Error $error) {
-            Log::error('error',[$error]);
+            \lib\Error::errorLog($error);
             $response = $request->response('',$error->getCode() ?: 1,$error->getMessage());
         }
         Log::info('response',$response);
@@ -50,12 +49,17 @@ class App  extends Container
 
     public function init()
     {
-        $cache = Container::get('cache',[Config::get('','cache')]);
-        $log = Container::get('log',[Config::get('','log')]);
-        //数据库初始化
-        Db::setConfig(Config::get('','database'));
-        Db::setCache($cache);
-        Db::setLog($log);
+        try {
+            $cache = Container::get('cache',[Config::get('','cache')]);
+            $log = Container::get('log',[Config::get('','log')]);
+            //数据库初始化
+            Db::setConfig(Config::get('','database'));
+            Db::setCache($cache);
+            Db::setLog($log);
+        } catch (\Exception $e) {
+            Error::exception($e);
+        }
+
     }
 
     /**

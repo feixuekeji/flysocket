@@ -43,9 +43,9 @@ class Events
      */
     public static function onWorkerStart($worker)
     {
-        //App::init();
         // 执行应用并响应
         Container::get('app')->init();
+
         //Redis初始化
         global $factory;
         $loop    = Worker::getEventLoop();

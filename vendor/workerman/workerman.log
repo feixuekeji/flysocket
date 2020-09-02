@@ -18208,3 +18208,994 @@ Stack trace:
 #16 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
 #17 {main}
 2020-09-01 16:24:50 pid:1 Worker process terminated
+2020-09-02 16:02:53 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(48): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-02 16:02:54 pid:1 Worker process terminated
+2020-09-02 16:04:15 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(53): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(48): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-02 16:04:16 pid:1 Worker process terminated
+2020-09-02 16:06:41 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(54): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(48): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-02 16:06:42 pid:1 Worker process terminated
+2020-09-02 16:09:34 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:09:35 pid:1 Worker process terminated
+2020-09-02 16:11:53 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:11:54 pid:1 Worker process terminated
+2020-09-02 16:11:55 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:11:56 pid:1 Worker process terminated
+2020-09-02 16:12:27 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:12:28 pid:1 Worker process terminated
+2020-09-02 16:13:38 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:13:39 pid:1 Worker process terminated
+2020-09-02 16:13:40 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:13:41 pid:1 Worker process terminated
+2020-09-02 16:14:43 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:14:44 pid:1 Worker process terminated
+2020-09-02 16:16:04 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:16:05 pid:1 Worker process terminated
+2020-09-02 16:16:06 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:16:07 pid:1 Worker process terminated
+2020-09-02 16:16:35 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:16:36 pid:1 Worker process terminated
+2020-09-02 16:16:37 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:16:38 pid:1 Worker process terminated
+2020-09-02 16:16:39 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:18:24 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:18:25 pid:1 Worker process terminated
+2020-09-02 16:18:26 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:18:27 pid:1 Worker process terminated
+2020-09-02 16:18:28 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:18:29 pid:1 Worker process terminated
+2020-09-02 16:18:30 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:18:31 pid:1 Worker process terminated
+2020-09-02 16:18:32 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:18:33 pid:1 Worker process terminated
+2020-09-02 16:18:34 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-02 16:18:34 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:25:31 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:25:32 pid:1 Worker process terminated
+2020-09-02 16:27:24 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:27:25 pid:1 Worker process terminated
+2020-09-02 16:27:26 pid:1 Error: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:27:27 pid:1 Worker process terminated
+2020-09-02 16:43:57 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:43:59 pid:1 Worker process terminated
+2020-09-02 16:44:00 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:44:01 pid:1 Worker process terminated
+2020-09-02 16:45:21 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:45:22 pid:1 Worker process terminated
+2020-09-02 16:45:23 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:46:20 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:46:21 pid:1 Worker process terminated
+2020-09-02 16:46:22 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:47:04 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:47:05 pid:1 Worker process terminated
+2020-09-02 16:47:06 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:47:07 pid:1 Worker process terminated
+2020-09-02 16:47:49 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:47:50 pid:1 Worker process terminated
+2020-09-02 16:47:51 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:47:52 pid:1 Worker process terminated
+2020-09-02 16:47:53 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:47:54 pid:1 Worker process terminated
+2020-09-02 16:49:21 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:49:22 pid:1 Worker process terminated
+2020-09-02 16:49:23 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:49:24 pid:1 Worker process terminated
+2020-09-02 16:50:35 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:50:36 pid:1 Worker process terminated
+2020-09-02 16:50:37 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:52:15 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:52:16 pid:1 Worker process terminated
+2020-09-02 16:52:17 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:52:18 pid:1 Worker process terminated
+2020-09-02 16:52:19 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:53:14 pid:1 RedisException: 由于目标计算机积极拒绝，无法连接。
+ in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php:15
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(15): Redis->pconnect('127.0.0.1', '6379')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php(25): lib\Redis->__construct()
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Cache.php(33): lib\Redis::getInstance()
+#3 [internal function]: lib\Cache->__construct(Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(424): ReflectionClass->newInstanceArgs(Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(269): lib\Container->invokeClass('lib\\Cache', Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(266): lib\Container->make('lib\\Cache', Array, false)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Container.php(117): lib\Container->make('cache', Array, false)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(54): lib\Container::get('cache', Array)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-02 16:53:15 pid:1 Worker process terminated
+2020-09-02 16:54:19 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:54:20 pid:1 Worker process terminated
+2020-09-02 16:54:21 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:54:22 pid:1 Worker process terminated
+2020-09-02 16:54:23 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:57:07 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 16:57:08 pid:1 Worker process terminated
+2020-09-02 16:57:09 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 17:01:29 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 17:01:30 pid:1 Worker process terminated
+2020-09-02 17:02:48 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 17:02:49 pid:1 Worker process terminated
+2020-09-02 17:04:51 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 17:04:52 pid:1 Worker process terminated
+2020-09-02 17:06:03 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 17:06:05 pid:1 Worker process terminated
+2020-09-02 17:06:06 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 17:06:07 pid:1 Worker process terminated
+2020-09-02 17:06:12 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 17:06:13 pid:1 Worker process terminated
+2020-09-02 17:06:16 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 17:07:39 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:53
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(49): lib\App->init()
+#1 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(36): Workerman\Worker::runAll()
+#9 {main}
+2020-09-02 17:07:40 pid:1 Worker process terminated
+2020-09-02 17:09:11 pid:1 Exception: defrte in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:29
+Stack trace:
+#0 [internal function]: lib\App->run('7f0000010b54000...', '\xE9\x83\xA8\xE5\x88\x86\xE7\x9A\x84\xE4\xBD\xA0')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(109): lib\Facade::__callStatic('run', Array)
+#3 [internal function]: Events::onMessage('7f0000010b54000...', '\xE9\x83\xA8\xE5\x88\x86\xE7\x9A\x84\xE4\xBD\xA0')
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '\xE9\x83\xA8\xE5\x88\x86\xE7\x9A\x84\xE4\xBD\xA0')
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #96)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#16 {main}
+2020-09-02 17:09:11 pid:1 Worker process terminated
+2020-09-02 17:34:58 pid:1 Error: Class 'think\facade\Log' not found in D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php:50
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(39): lib\Error::report(Object(Exception))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(35): lib\Error::exception(Object(Exception))
+#2 [internal function]: lib\App->run('7f0000010b54000...', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(108): lib\Facade::__callStatic('run', Array)
+#5 [internal function]: Events::onMessage('7f0000010b54000...', '\xE6\x9B\xB4\xE6\x8D\xA2\xE4\xBB\xBB\xE4\xBD\x95')
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '\xE6\x9B\xB4\xE6\x8D\xA2\xE4\xBB\xBB\xE4\xBD\x95')
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #95)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-02 17:34:58 pid:1 Worker process terminated
+2020-09-02 17:37:00 pid:1 Error: Class 'think\facade\Log' not found in D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php:50
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(39): lib\Error::report(Object(Exception))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(35): lib\Error::exception(Object(Exception))
+#2 [internal function]: lib\App->run('7f0000010b54000...', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(108): lib\Facade::__callStatic('run', Array)
+#5 [internal function]: Events::onMessage('7f0000010b54000...', '\xE6\x88\x90\xE9\x83\xBD\xE8\x89\xB2\xE9\xAC\xBC')
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '\xE6\x88\x90\xE9\x83\xBD\xE8\x89\xB2\xE9\xAC\xBC')
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #95)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-02 17:37:00 pid:1 Worker process terminated
+2020-09-02 17:38:04 pid:1 Error: Class 'think\facade\Log' not found in D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php:50
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(39): lib\Error::report(Object(Exception))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(35): lib\Error::exception(Object(Exception))
+#2 [internal function]: lib\App->run('7f0000010b54000...', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(108): lib\Facade::__callStatic('run', Array)
+#5 [internal function]: Events::onMessage('7f0000010b54000...', '\xE8\xAE\xA9\xE5\x9B\xBD\xE4\xBA\xBA')
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '\xE8\xAE\xA9\xE5\x9B\xBD\xE4\xBA\xBA')
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #95)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-02 17:38:04 pid:1 Worker process terminated
+2020-09-02 17:38:33 pid:1 Error: Class 'think\facade\Log' not found in D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php:50
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(39): lib\Error::report(Object(Exception))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(35): lib\Error::exception(Object(Exception))
+#2 [internal function]: lib\App->run('7f0000010b54000...', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(108): lib\Facade::__callStatic('run', Array)
+#5 [internal function]: Events::onMessage('7f0000010b54000...', '\xE6\xA0\xB8\xE6\xA1\x83\xE4\xBB\x81\xE5\x92\x8C')
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '\xE6\xA0\xB8\xE6\xA1\x83\xE4\xBB\x81\xE5\x92\x8C')
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #95)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-02 17:38:33 pid:1 Worker process terminated
+2020-09-02 17:43:16 pid:1 Exception: ddd in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:29
+Stack trace:
+#0 [internal function]: lib\App->run('7f0000010b54000...', '\xE6\x8A\x95\xE5\x85\xA5\xE6\xA0\xB8\xE6\xA1\x83\xE4\xBB\x81')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(108): lib\Facade::__callStatic('run', Array)
+#3 [internal function]: Events::onMessage('7f0000010b54000...', '\xE6\x8A\x95\xE5\x85\xA5\xE6\xA0\xB8\xE6\xA1\x83\xE4\xBB\x81')
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '\xE6\x8A\x95\xE5\x85\xA5\xE6\xA0\xB8\xE6\xA1\x83\xE4\xBB\x81')
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #97)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#16 {main}
+2020-09-02 17:43:16 pid:1 Worker process terminated
+2020-09-02 17:44:25 pid:1 Exception: ddd in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:29
+Stack trace:
+#0 [internal function]: lib\App->run('7f0000010b54000...', '\xE9\xA3\x8E')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(108): lib\Facade::__callStatic('run', Array)
+#3 [internal function]: Events::onMessage('7f0000010b54000...', '\xE9\xA3\x8E')
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '\xE9\xA3\x8E')
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #96)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#16 {main}
+2020-09-02 17:44:25 pid:1 Worker process terminated
+2020-09-02 17:45:11 pid:1 Exception: ddd in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:29
+Stack trace:
+#0 [internal function]: lib\App->run('7f0000010b54000...', '\xE4\xB8\x8D\xE6\x89\x93\xE7\xAE\x97')
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(108): lib\Facade::__callStatic('run', Array)
+#3 [internal function]: Events::onMessage('7f0000010b54000...', '\xE4\xB8\x8D\xE6\x89\x93\xE7\xAE\x97')
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '\xE4\xB8\x8D\xE6\x89\x93\xE7\xAE\x97')
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #96)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#16 {main}
+2020-09-02 17:45:11 pid:1 Worker process terminated
+2020-09-02 17:49:54 pid:1 ArgumentCountError: Too few arguments to function lib\Error::error(), 1 passed in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php on line 40 and at least 2 expected in D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php:62
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(40): lib\Error::error(Object(Error))
+#1 [internal function]: lib\App->run('7f0000010b54000...', Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(107): lib\Facade::__callStatic('run', Array)
+#4 [internal function]: Events::onMessage('7f0000010b54000...', 'reg')
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', 'reg')
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #95)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#17 {main}
+2020-09-02 17:49:54 pid:1 Worker process terminated
+2020-09-02 17:51:34 pid:1 TypeError: Argument 1 passed to lib\Error::report() must be an instance of Exception, instance of Error given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php on line 39 and defined in D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php:42
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(39): lib\Error::report(Object(Error))
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(40): lib\Error::exception(Object(Error))
+#2 [internal function]: lib\App->run('7f0000010b54000...', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(107): lib\Facade::__callStatic('run', Array)
+#5 [internal function]: Events::onMessage('7f0000010b54000...', 'reg')
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', 'reg')
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #96)
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-02 17:51:34 pid:1 Worker process terminated
+2020-09-02 17:54:43 pid:1 Error: Call to a member function response() on null in D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php:41
+Stack trace:
+#0 [internal function]: lib\App->run('7f0000010b54000...', Array)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(107): lib\Facade::__callStatic('run', Array)
+#3 [internal function]: Events::onMessage('7f0000010b54000...', '\xE6\x9B\xB4\xE6\x8D\xA2\xE4\xBB\xBB\xE4\xBD\x95')
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '\xE6\x9B\xB4\xE6\x8D\xA2\xE4\xBB\xBB\xE4\xBD\x95')
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #95)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#16 {main}
+2020-09-02 17:54:43 pid:1 Worker process terminated

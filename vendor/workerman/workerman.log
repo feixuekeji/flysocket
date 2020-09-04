@@ -19199,3 +19199,367 @@ Stack trace:
 #15 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
 #16 {main}
 2020-09-02 17:54:43 pid:1 Worker process terminated
+2020-09-03 09:35:18 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:35:19 pid:1 Worker process terminated
+2020-09-03 09:35:22 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:35:23 pid:1 Worker process terminated
+2020-09-03 09:35:26 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:35:26 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:35:27 pid:1 Worker process terminated
+2020-09-03 09:35:30 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:35:30 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:35:31 pid:1 Worker process terminated
+2020-09-03 09:35:34 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:35:34 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:35:35 pid:1 Worker process terminated
+2020-09-03 09:35:38 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:35:38 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:35:39 pid:1 Worker process terminated
+2020-09-03 09:35:42 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:35:42 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:35:43 pid:1 Worker process terminated
+2020-09-03 09:35:46 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:35:46 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:35:47 pid:1 Worker process terminated
+2020-09-03 09:35:50 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:35:50 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:35:51 pid:1 Worker process terminated
+2020-09-03 09:35:54 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:35:54 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:35:55 pid:1 Worker process terminated
+2020-09-03 09:35:58 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:35:58 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:35:59 pid:1 Worker process terminated
+2020-09-03 09:36:02 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:36:02 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:36:03 pid:1 Worker process terminated
+2020-09-03 09:36:06 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:36:06 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:36:07 pid:1 Worker process terminated
+2020-09-03 09:36:10 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:36:10 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:36:11 pid:1 Worker process terminated
+2020-09-03 09:36:14 pid:1 Register auth timeout (127.0.0.1). See http://doc2.workerman.net/register-auth-timeout.html
+2020-09-03 09:36:14 pid:1 TypeError: Argument 1 passed to Monolog\Logger::__construct() must be of the type string, null given, called in D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php on line 65 and defined in D:\phpstudy_pro\WWW\GatewayWorker\vendor\monolog\monolog\src\Monolog\Logger.php:150
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(65): Monolog\Logger->__construct(NULL)
+#1 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(94): lib\Log->createLogger('error')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(130): lib\Log->record('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', 'error', Array)
+#3 D:\phpstudy_pro\WWW\GatewayWorker\lib\Log.php(178): lib\Log->log('error', '\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#4 [internal function]: lib\Log->error('\xE9\x94\x99\xE8\xAF\xAF\xE4\xBF\xA1\xE6\x81\xAF', Array)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\lib\Facade.php(112): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(49): lib\Facade::__callStatic('error', Array)
+#7 D:\phpstudy_pro\WWW\GatewayWorker\lib\Error.php(38): lib\Error::report(Object(RedisException))
+#8 D:\phpstudy_pro\WWW\GatewayWorker\lib\App.php(60): lib\Error::exception(Object(RedisException))
+#9 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(47): lib\App->init()
+#10 [internal function]: Events::onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(223): call_user_func('Events::onWorke...', Object(GatewayWorker\BusinessWorker))
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2393): GatewayWorker\BusinessWorker->onWorkerStart(Object(GatewayWorker\BusinessWorker))
+#13 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#15 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#16 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#17 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2020-09-03 09:36:15 pid:1 Worker process terminated
+2020-09-03 16:10:33 pid:1 Error: Call to undefined function posix_getpid() in D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php:1825
+Stack trace:
+#0 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\Events.php(108): Workerman\Worker::stopAll()
+#1 [internal function]: Events::onMessage('7f0000010b54000...', '{\n             ...')
+#2 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(404): call_user_func('Events::onMessa...', '7f0000010b54000...', '{\n             ...')
+#3 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(660): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(245): Workerman\Connection\TcpConnection->baseRead(Resource id #95)
+#5 D:\phpstudy_pro\WWW\GatewayWorker\vendor\react\event-loop\src\StreamSelectLoop.php(212): React\EventLoop\StreamSelectLoop->waitForStreamActivity(NULL)
+#6 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(254): React\EventLoop\StreamSelectLoop->run()
+#7 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Events\React\Base.php(137): Workerman\Events\React\Base->run()
+#8 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(2408): Workerman\Events\React\Base->loop()
+#9 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#10 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1404): GatewayWorker\BusinessWorker->run()
+#11 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#12 D:\phpstudy_pro\WWW\GatewayWorker\vendor\workerman\workerman\Worker.php(546): Workerman\Worker::forkWorkers()
+#13 D:\phpstudy_pro\WWW\GatewayWorker\application\worker\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2020-09-03 16:40:41 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "'goto' to undefined label 'connect' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php on line 36"
+2020-09-03 16:40:42 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "'goto' to undefined label 'connect' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php on line 36"
+2020-09-03 16:40:43 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "'goto' to undefined label 'connect' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php on line 36"
+2020-09-03 16:40:44 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "'goto' to undefined label 'connect' in D:\phpstudy_pro\WWW\GatewayWorker\lib\Redis.php on line 36"

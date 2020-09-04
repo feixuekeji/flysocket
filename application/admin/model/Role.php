@@ -13,6 +13,7 @@ class Role extends Model
         $list = $this
             ->where($where)
             ->order(['id' => 'desc'])
+            ->cache(true)
             ->paginate([
                 'list_rows'=> $size,
                 'page'     => $page,

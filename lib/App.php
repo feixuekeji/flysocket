@@ -36,7 +36,7 @@ class App  extends Container
             $response = $request->response('',$e->getCode() ?: 1,iconv('gbk', 'utf-8', $e->getMessage()));
         } catch (\Error $error) {
             \lib\Error::errorLog($error);
-            $response = $request->response('',$error->getCode() ?: 1,$error->getMessage());
+            $response = $request->response('',$error->getCode() ?: 1,iconv('gbk', 'utf-8', $error->getMessage()));
         }
         Log::info('response',$response);
         // 向当前client_id发送数据
@@ -46,12 +46,16 @@ class App  extends Container
 
     }
 
-
+    /**
+     *初始化
+     * @author xingxiong.fei@163.com
+     * @date 2020-09-03 9:43
+     */
     public function init()
     {
         try {
-            $cache = Container::get('cache',[Config::get('','cache')]);
             $log = Container::get('log',[Config::get('','log')]);
+            $cache = Container::get('cache',[Config::get('','cache')]);
             //数据库初始化
             Db::setConfig(Config::get('','database'));
             Db::setCache($cache);

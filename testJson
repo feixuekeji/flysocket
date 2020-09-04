@@ -150,6 +150,17 @@
             "msg": "success"
         }
 
+        {
+                    "app": "http://www.bejson.com",
+                    "api": "admin/role/list",
+                    "ver": 88,
+                    "data": {
+                        "id": 1
+                    },
+                    "code": 0,
+                    "msg": "success"
+                }
+
 
 
                 {

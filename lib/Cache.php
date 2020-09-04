@@ -30,7 +30,6 @@ class Cache implements Psr16CacheInterface
         if (!empty($options)) {
             $this->options = array_merge($this->options, $options);
         }
-        $this->handler = Redis::getInstance();
     }
 
 
@@ -40,6 +39,7 @@ class Cache implements Psr16CacheInterface
      */
     public function get($name, $default = null)
     {
+        $this->handler = Redis::getInstance();
         $key    = $this->getCacheKey($name);
         $value = $this->handler->get($key);
         if (is_null($value) || false === $value) {
@@ -59,6 +59,7 @@ class Cache implements Psr16CacheInterface
      */
     public function set($name, $value, $expire = null)
     {
+        $this->handler = Redis::getInstance();
         if (is_null($expire)) {
             $expire = $this->options['expire'];
         }
@@ -132,6 +133,7 @@ class Cache implements Psr16CacheInterface
      */
     public function delete($name)
     {
+        $this->handler = Redis::getInstance();
         $key = $this->getCacheKey($name);
         try {
             $this->handler->del($key);
@@ -146,6 +148,7 @@ class Cache implements Psr16CacheInterface
      */
     public function deleteMultiple($keys)
     {
+        $this->handler = Redis::getInstance();
        if (!\is_array($keys)) {
             throw new Exception(sprintf('Cache keys must be array or Traversable, "%s" given', \is_object($keys) ? \get_class($keys) : \gettype($keys)));
         }
@@ -172,6 +175,7 @@ class Cache implements Psr16CacheInterface
      */
     public function clear()
     {
+        $this->handler = Redis::getInstance();
         return $this->handler->flushDB();
     }
 
@@ -186,6 +190,7 @@ class Cache implements Psr16CacheInterface
      */
     public function has($name)
     {
+        $this->handler = Redis::getInstance();
         $key = $this->getCacheKey($name);
         return $this->handler->exists($key);
     }

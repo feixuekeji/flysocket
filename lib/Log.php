@@ -19,9 +19,12 @@ class Log implements LoggerInterface
 
     protected $config = [
         'path'        => '',
+        // 日志通道名
+        'channel'        => 'app',
         'level' => 'debug',
         'max_files'   => 0,
         'file_permission'  => 0666,
+        'sql_level'  => 'info',
     ];
 
     // 实例化并传入参数
@@ -126,7 +129,7 @@ class Log implements LoggerInterface
     public function log($level, $message, array $context = [])
     {
         if ($level == 'sql')
-            $level = 'debug';
+            $level = $this->config['sql_level'];
         $this->record($message, $level, $context);
     }
 

@@ -19,13 +19,45 @@ class Redis
 
     }
 
+
+
+
     public static function getInstance( )
     {
         if (!self::$_instance) {
-           new self();
+            new self();
+        }
+        else{
+            try {
+                @trigger_error('flag', E_USER_NOTICE);
+                self::$_instance->ping();
+                $error = error_get_last();
+                if($error['message'] != 'flag')
+                    throw new \Exception('Redis server went away');
+            } catch (\Exception $e) {
+                // 断线重连
+                new self();
+            }
         }
         return self::$_instance;
-}
+    }
+
+//    public static function getInstance( )
+//    {
+//        try {
+//            if (!self::$_instance) {
+//                new self();
+//            } else {
+//                if (!self::$_instance->ping())
+//                    new self();
+//            }
+//        } catch (\Exception $e) {
+//            // 断线重连
+//            new self();
+//        }
+//        return self::$_instance;
+//    }
+
 
 
     /**

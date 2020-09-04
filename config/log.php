@@ -14,6 +14,8 @@ return [
     'max_files'   => 0,
     // 文件权限
     'file_permission' => 0666,
+    //数据库记录级别
+    'sql_level'  => 'info',
     // 是否关闭日志写入
     'close'       => false,
 ];

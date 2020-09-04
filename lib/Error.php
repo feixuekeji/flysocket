@@ -21,7 +21,6 @@ class Error
      */
     public static function register()
     {
-        echo 123;
         error_reporting(E_ALL);
         set_error_handler([__CLASS__, 'error']);
         set_exception_handler([__CLASS__, 'exception']);
@@ -44,7 +43,7 @@ class Error
         $data = [
             'file'    => $exception->getFile(),
             'line'    => $exception->getLine(),
-            'message' => $exception->getMessage(),
+            'message' => iconv('gbk', 'utf-8', $exception->getMessage()),
             'code'    => $exception->getCode(),
         ];
         \lib\facade\Log::error('错误信息',$data);

@@ -28,8 +28,8 @@ use lib\facade\App;
 use lib\Container;
 
 // 自动加载类
-require_once __DIR__ . '/../../vendor/autoload.php';
-require_once __DIR__ . '/../../lib/Autoloader.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../lib/Autoloader.php';
 /**
  * 主逻辑
  * 主要是处理 onConnect onMessage onClose 三个方法
@@ -77,33 +77,6 @@ class Events
    {
        if ($message == 'ping')
            return;
-//       $message = json_decode($message,true) ?? [];
-//       try {
-//            $request = new Request($message);
-//           } catch (Exception $e){
-//           $response = ['data' => '','code' => $e->getCode(),'msg' => $e->getMessage()];
-//           Gateway::sendToClient($client_id, json_encode($response));
-//           return;
-//       }
-//
-//       try {
-//           $res = Route::dispatch($request);
-//           $response = $request->response($res['data'],$res['code'],$res['msg']);
-//       } catch (Exception $e) {
-//           Log::error('exception',[$e]);
-//           //echo 'Error: ' . $e . PHP_EOL;
-//           $response = $request->response('',$e->getCode() ?: 1,iconv('gbk', 'utf-8', $e->getMessage()));
-//       } catch (Error $error) {
-//           Log::error('error',[$error]);
-//           $response = $request->response('',$error->getCode() ?: 1,$error->getMessage());
-//       }
-//
-//
-//
-//       Log::info('response',$response);
-//       // 向当前client_id发送数据
-//       Gateway::sendToClient($client_id, json_encode($response));
-
        App::run($client_id, $message);
    }
 

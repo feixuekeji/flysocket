@@ -2,7 +2,7 @@
 use \Workerman\Worker;
 use \GatewayWorker\Gateway;
 use \Workerman\Autoloader;
-require_once __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 Autoloader::setRootPath(__DIR__);
 
 // #### 内部推送端口(假设当前服务器内网ip为192.168.100.100) ####

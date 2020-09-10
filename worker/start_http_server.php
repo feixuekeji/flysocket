@@ -1,7 +1,7 @@
 <?php
 use Workerman\Worker;
 // 自动加载类
-require_once __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $worker = new Worker('http://0.0.0.0:8080');
 

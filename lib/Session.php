@@ -264,7 +264,6 @@ class Session
         if (is_null($array)) {
             $array = [];
         }
-
         $array[] = $value;
 
         $this->set($key, $array);

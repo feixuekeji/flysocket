@@ -56,6 +56,7 @@ class App  extends Container
         try {
             $log = Container::get('log',[Config::get('','log')]);
             $cache = Container::get('cache',[Config::get('','cache')]);
+            Container::get('session',[Config::get('','session')]);
             //数据库初始化
             Db::setConfig(Config::get('','database'));
             Db::setCache($cache);

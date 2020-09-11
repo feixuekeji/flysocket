@@ -26,8 +26,9 @@ class App  extends Container
 
     public function run($client_id, $message)
     {
-        $message = json_decode($message,true) ?? [];
         try {
+            $message = json_decode($message,true);
+            !is_array($message) && $message = [];
             $request = Container::get('request',[$message]);
             $res = Route::dispatch($request);
             $response = $request->response($res['data'],$res['code'],$res['msg']);

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src='request.js'></script>
+</head>
+<body>
+
+<script>
+    // var socket = io.connect('ws://localhost:8080');
+    // socket.emit('msg','You get my message?',function(data){
+    //     alert(data);
+    // });
+
+    // var ws = new WebSocket("ws://localhost:8282");
+    //
+    // ws.onopen = function()
+    // {
+    //     // Web Socket 已连接上，使用 send() 方法发送数据
+    //     ws.send("发送数据");
+    //
+    // };
+    //
+    // ws.onmessage = function (evt)
+    // {
+    //     var received_msg = evt.data;
+    // };
+    // ws.send('aaa',1,function (data) {
+    //     console.log(data)
+    //
+    // })
+
+    sendSock('aaa',function (data) {
+        console.log(data)
+
+    })
+</script>
+</body>
+</html>

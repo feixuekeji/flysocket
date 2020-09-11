@@ -1,6 +1,13 @@
 {
-    "name"  : "workerman/gateway-worker-demo",
-    "keywords": ["distributed","communication"],
+    "name"  : "flysnow/workerman-api",
+    "description": "a api tool based workerman",
+    "type" : "project",
+    "authors": [
+        {
+            "name": "xxf",
+            "email":"waxiongfeifei@gmail.com"
+        }
+    ],
     "homepage": "http://www.workerman.net",
     "license" : "MIT",
     "require": {

@@ -1,30 +1,3 @@
-// function ws() {
-//
-//     this.ws = new WebSocket("ws://localhost:8282");
-//     this.ws.onopen = function () {
-//         // Web Socket 已连接上，使用 send() 方法发送数据
-//         //ws.send("发送数据");
-//
-//
-//     };
-//
-//         this.messageList = [];
-//         this.send = function(data, id, callback) {
-//
-//             this.messageList['aa'] = callback;
-//             this.ws.send(data);
-//     };
-//
-//     this.ws.onmessage = function (e) {
-//         //处理各种推送消息
-//         //执行回调
-//         this.messageList['aa'](e);
-//     };
-//
-// }
-//
-// var ws = new ws();
-
 var websock = null
 var globalCallback = null
 

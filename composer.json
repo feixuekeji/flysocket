@@ -2,6 +2,7 @@
     "name"  : "flysnow/workerman-api",
     "description": "a api tool based workerman",
     "type" : "project",
+    "version" : "1.0",
     "authors": [
         {
             "name": "xxf",
@@ -11,6 +12,7 @@
     "homepage": "http://www.workerman.net",
     "license" : "MIT",
     "require": {
+        "php": ">=7.1.0",
         "workerman/gateway-worker" : ">=3.0.0",
         "topthink/think-orm": "^2.0",
         "monolog/monolog": "^2.1",

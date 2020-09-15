@@ -4,5 +4,5 @@
 .env
 .DS_Store
 runtime/
-vendor/
+vendor/*
 composer.lock

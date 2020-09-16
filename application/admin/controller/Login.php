@@ -2,7 +2,7 @@
 namespace application\admin\controller;
 use lib\Request;
 use application\admin\model\Admin as M;
-use lib\Token;
+use extend\Token;
 
 class Login
 {

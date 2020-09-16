@@ -34,10 +34,10 @@ class App  extends Container
             $response = $request->response($res['data'],$res['code'],$res['msg']);
         } catch (Exception $e) {
             Error::exception($e);
-            $response = $request->response('',$e->getCode() ?: 1,iconv('gbk', 'utf-8', $e->getMessage()));
+            $response = $request->response('',$e->getCode() ?: 1,$e->getMessage());
         } catch (\Error $error) {
             \lib\Error::errorLog($error);
-            $response = $request->response('',$error->getCode() ?: 1,iconv('gbk', 'utf-8', $error->getMessage()));
+            $response = $request->response('',$error->getCode() ?: 1,$error->getMessage());
         }
         Log::info('response',$response);
         // 向当前client_id发送数据

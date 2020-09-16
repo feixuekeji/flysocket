@@ -43,7 +43,7 @@ class Error
         $data = [
             'file'    => $exception->getFile(),
             'line'    => $exception->getLine(),
-            'message' => iconv('gbk', 'utf-8', $exception->getMessage()),
+            'message' => $exception->getMessage(),
             'code'    => $exception->getCode(),
         ];
         \lib\facade\Log::error('错误信息',$data);

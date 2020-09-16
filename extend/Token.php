@@ -1,6 +1,6 @@
 <?php
 
-namespace lib;
+namespace extend;
 use Firebase\JWT\JWT;
 
 /**token类

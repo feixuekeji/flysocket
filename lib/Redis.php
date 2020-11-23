@@ -12,7 +12,7 @@ class Redis
         $config = Config::get('redis');
         self::$_instance = new \Redis();
         //从配置读取
-        self::$_instance->pconnect($config['host'], $config['port']);
+        self::$_instance->connect($config['host'], $config['port']);
         if ('' != $config['password']) {
             self::$_instance->auth($config['password']);
         }

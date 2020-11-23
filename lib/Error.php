@@ -47,6 +47,7 @@ class Error
             'code'    => $exception->getCode(),
         ];
         \lib\facade\Log::error('错误信息',$data);
+        \lib\facade\Log::error('错误跟踪',$exception->getTrace());
     }
 
     /**

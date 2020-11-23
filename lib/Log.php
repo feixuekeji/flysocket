@@ -46,14 +46,10 @@ class Log implements LoggerInterface
     }
 
 
-    /**
-     * 创建日志
-     * @param $name
-     * @return mixed
-     */
-    private function createLogger($name)
+
+    private function createLogger($name,$fileName = '')
     {
-        if (empty($this->loggers[$name])) {
+        if (empty($this->loggers[$name.$fileName])) {
             // 根据业务域名与方法名进行日志名称的确定
             $channel       = $this->config['channel'];
             // 日志文件目录
@@ -67,16 +63,17 @@ class Log implements LoggerInterface
             // 创建日志
             $logger    = new Logger($channel);
             // 日志文件相关操作
-            $handler   = new RotatingFileHandler("{$path}{$name}.log", $maxFiles, $level, true, $filePermission);
+            $logFileName = empty($fileName) ? $name : $name . '-' .$fileName;
+            $handler   = new RotatingFileHandler("{$path}{$logFileName}.log", $maxFiles, $level, true, $filePermission);
             // 日志格式
             $formatter = new LineFormatter("%datetime% %channel%:%level_name% %message% %context% %extra%\n", "Y-m-d H:i:s", false, true);
 
             $handler->setFormatter($formatter);
             $logger->pushHandler($handler);
 
-            $this->loggers[$name] = $logger;
+            $this->loggers[$name.$fileName] = $logger;
         }
-        return $this->loggers[$name];
+        return $this->loggers[$name.$fileName];
     }
 
 
@@ -87,14 +84,15 @@ class Log implements LoggerInterface
      * @param  mixed  $message       日志信息
      * @param  string $level      日志级别
      * @param  array  $context   替换内容
+     * @param string $fileName  文件名
      * @return $this
      */
-    public function record($message, $level = 'info', array $context = [])
+    public function record($message, $level = 'info', array $context = [],$fileName = '')
     {
         if (!$this->allowWrite) {
             return;
         }
-        $logger = $this->createLogger($level);
+        $logger = $this->createLogger($level,$fileName);
         $level = Logger::toMonologLevel($level);
         if (!is_int($level)) $level = Logger::INFO;
         // $backtrace数组第$idx元素是当前行，第$idx+1元素表示上一层，另外function、class需再往上取一个层次
@@ -126,11 +124,11 @@ class Log implements LoggerInterface
      * @param  array  $context   替换内容
      * @return void
      */
-    public function log($level, $message, array $context = [])
+    public function log($level, $message, array $context = [], $fileName = '')
     {
         if ($level == 'sql')
             $level = $this->config['sql_level'];
-        $this->record($message, $level, $context);
+        $this->record($message, $level, $context, $fileName);
     }
 
     /**
@@ -198,11 +196,12 @@ class Log implements LoggerInterface
      * @access public
      * @param  mixed  $message   日志信息
      * @param  array  $context   替换内容
+     * * @param string $fileName
      * @return void
      */
-    public function notice($message, array $context = [])
+    public function notice($message, array $context = [],$fileName = '')
     {
-        $this->log(__FUNCTION__, $message, $context);
+        $this->log(__FUNCTION__, $message, $context, $fileName);
     }
 
     /**
@@ -210,11 +209,13 @@ class Log implements LoggerInterface
      * @access public
      * @param  mixed  $message   日志信息
      * @param  array  $context   替换内容
+     * @param string $fileName
      * @return void
      */
-    public function info($message, array $context = [])
+
+    public function info($message, array $context = [],$fileName = '')
     {
-        $this->log(__FUNCTION__, $message, $context);
+        $this->log(__FUNCTION__, $message, $context, $fileName);
     }
 
     /**

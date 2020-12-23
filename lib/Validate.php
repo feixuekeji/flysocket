@@ -1497,7 +1497,7 @@ class Validate
 
         if (0 === strpos($msg, '{%')) {
             $msg = $this->lang[substr($msg, 2, -1)];
-        } elseif (isset($this->lang['msg'])) {
+        } elseif (isset($this->lang[$msg])) {
             $msg = $this->lang[$msg];
         }
 

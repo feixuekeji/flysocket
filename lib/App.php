@@ -6,6 +6,7 @@ use Exception;
 use think\facade\Db;
 use \GatewayWorker\Lib\Gateway;
 use lib\facade\Log;
+use Workerman\Worker;
 //加载函数库
 require_once __DIR__ . '/../application/common.php';
 
@@ -32,7 +33,7 @@ class App  extends Container
             $request = Container::get('request',[$message]);
             $res = Route::dispatch($request);
             $response = $request->response($res['data'],$res['code'],$res['msg']);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             Error::exception($e);
             $response = $request->response('',$e->getCode() ?: 1,$e->getMessage());
         } catch (\Error $error) {
@@ -52,7 +53,7 @@ class App  extends Container
      * @author xingxiong.fei@163.com
      * @date 2020-09-03 9:43
      */
-    public function init()
+    public function init($workerId)
     {
         try {
             $log = Container::get('log',[Config::get('','log')]);
@@ -62,6 +63,7 @@ class App  extends Container
             Db::setConfig(Config::get('','database'));
             Db::setCache($cache);
             Db::setLog($log);
+            $workerId == 0 && $this->corn();
         } catch (\Exception $e) {
             Error::exception($e);
         }
@@ -76,6 +78,18 @@ class App  extends Container
     public function getRootPath()
     {
         return $this->rootPath;
+    }
+
+    /**定时器
+     * @author waxiongfeifei@gmail.com
+     * @date 2020/12/29 下午6:06
+     */
+    public function corn()
+    {
+        $filename = __DIR__ . DIRECTORY_SEPARATOR . '../config/corn.php';
+        if (is_file($filename)) {
+            include $filename;
+        }
     }
 
 }

@@ -68,6 +68,7 @@ class Error
             'code'    => $errno,
         ];
         \lib\facade\Log::error('错误信息',$data);
+
     }
 
     public static function errorLog(\Error $error): void

@@ -1053,18 +1053,20 @@ class Validate
         } else {
             $map = [];
         }
-
         $pk = !empty($rule[3]) ? $rule[3] : $db->getPk();
 
+        /**
+         * 解决多条件查询时报错
+         */
+        $mapPK = [];
         if (is_string($pk)) {
             if (isset($rule[2])) {
-                $map[] = [$pk, '<>', $rule[2]];
+                $mapPK[] = [$pk, '<>', $rule[2]];
             } elseif (isset($data[$pk])) {
-                $map[] = [$pk, '<>', $data[$pk]];
+                $mapPK[] = [$pk, '<>', $data[$pk]];
             }
         }
-
-        if ($db->where($map)->field($pk)->find()) {
+        if ($db->where($map)->where($mapPK)->field($pk)->find()) {
             return false;
         }
 

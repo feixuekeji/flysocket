@@ -21,7 +21,7 @@ class Controller
      */
     public function __construct(Request $request)
     {
-        $this->request = $request;
+        $this->request = Container::get('request');
         // 控制器初始化
         $this->initialize();
     }

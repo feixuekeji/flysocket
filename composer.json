@@ -1,6 +1,6 @@
 {
     "name"  : "flysnow/flysocket",
-    "description": "a api tool based workerman",
+    "description": "flysocket是一款基于GatewayWorker的长连接MVC开发框架，适用于前后端通过长连接进行通讯的web项目，同时也适用于开发tcp长连接应用如即时通信、物联网、消息推送、智能家居等",
     "type" : "project",
     "version" : "1.0",
     "authors": [
@@ -16,7 +16,6 @@
         "workerman/gateway-worker" : ">=3.0.0",
         "topthink/think-orm": "^2.0",
         "monolog/monolog": "^2.1",
-        "clue/redis-react": "^2.3",
-        "firebase/php-jwt": "^5.2"
+        "clue/redis-react": "^2.3"
     }
 }

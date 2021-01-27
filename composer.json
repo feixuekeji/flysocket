@@ -1,5 +1,5 @@
 {
-    "name"  : "flysnow/workerman-api",
+    "name"  : "flysnow/flysocket",
     "description": "a api tool based workerman",
     "type" : "project",
     "version" : "1.0",
@@ -9,7 +9,7 @@
             "email":"waxiongfeifei@gmail.com"
         }
     ],
-    "homepage": "http://www.workerman.net",
+    "homepage": "https://www.kancloud.cn/xiongfeifei/ver1/1980626",
     "license" : "MIT",
     "require": {
         "php": ">=7.1.0",

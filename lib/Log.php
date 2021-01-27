@@ -39,7 +39,7 @@ class Log implements LoggerInterface
         }
 
         if (empty($this->config['path'])) {
-            $this->config['path'] = \lib\facade\App::getRootPath() . 'data/logs' . DIRECTORY_SEPARATOR;
+            $this->config['path'] = \lib\facade\App::getRootPath() . 'runtime/logs' . DIRECTORY_SEPARATOR;
         } elseif (substr($this->config['path'], -1) != DIRECTORY_SEPARATOR) {
             $this->config['path'] .= DIRECTORY_SEPARATOR;
         }

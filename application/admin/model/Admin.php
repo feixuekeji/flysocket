@@ -16,33 +16,6 @@ class Admin extends Model
     }
 
 
-    /**
-     * 权限检查
-     * @param int $adminId
-     * @param string $api
-     * @return mixed
-     */
-    public function checkAdminAuth($adminId = 0, $api = '')
-    {
-        try {
-            $api = explode('/',$api);
-            $controller = $api[0].'/'.$api[1];
-            $action = $api[2];
-            $menuModel = new Menu();
-            $menuId =  $menuModel->getIdByAction($controller);
-            $roleId = $this->where(['id' =>$adminId,'status' => 1])->value('role_id');
-            $where = [
-                'role_id' => $roleId,
-                'menu_id' => $menuId,
-            ];
-            $checkTag = Db::table('role_power')->where($where)->value($action,0);
-            return $checkTag;
-        } catch (\Exception $e) {
-            return false;
-        }
-
-    }
-
 
     public function login($name,$password)
     {
@@ -108,35 +81,6 @@ class Admin extends Model
     }
 
 
-    public function edit($input)
-    {
-        $id = $input['id'];
-        $salt = Config::get('password_salt');
-        $info = $this->where('id',$id)->find();
-        if ($info->isEmpty())
-            return ['data' => '', 'code' => 20004, 'msg' => '账号不存在'];
-        $addData = [
-            'name' => $input['name'],
-            'create_time' => time(),
-            'role_id' => intval($input['role_id'] ?? 0),
-            'status' => $input['status'],
-        ];
-        if (!empty($input['password'])) {
-            //如果输入了新密码
-            $addData['password'] = md5(base64_encode($input['password'].$salt));
-        }
-        $validate = new \application\admin\validate\Admin();
-        if (!$validate->check($addData))
-            return ['data' => '', 'code' => 300, 'msg' => $validate->getError()];
-        $roleInfo = Role::where(['id'=>$input['role_id'],'status' => 1])->find();
-        if (empty($roleInfo))
-            return ['data' => '', 'code' => 20003, 'msg' => '角色不存在'];
-        $res = $info->save($addData);;
-        if ($res)
-            return ['data' => '', 'code' => 0, 'msg' => '成功'];
-        return ['data' => '', 'code' => 20005, 'msg' => '业务异常'];
-
-    }
 
     public function del($id)
     {

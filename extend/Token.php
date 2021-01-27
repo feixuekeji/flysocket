@@ -17,7 +17,7 @@ class Token
      * @param string $scopes 选填 token标识，请求接口的token
      * @return string
      */
-    private $TokenKey = "1qaz2wsx3edc%&*j";
+    private $TokenKey = "greetre%&*j";
 
     public function createToken($data="",$exp_time=0,$scopes=""){
 

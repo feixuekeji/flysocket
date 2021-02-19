@@ -23,4 +23,4 @@ flysocket是一款基于GatewayWorker的长连接MVC开发框架，适用于前�
 *   验证器
 
 ##项目文档请移步
-*   [开发文档](https://www.kancloud.cn/xiongfeifei/ver1/1980626)
+*   [开发文档](https://www.kancloud.cn/xiongfeifei/ver1)

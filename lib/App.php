@@ -33,12 +33,9 @@ class App  extends Container
             $request = Container::get('request',[$message]);
             $res = Route::dispatch($request);
             $response = $request->response($res['data'],$res['code'],$res['msg']);
-        } catch (\Exception $e) {
+        } catch (\Throwable $e) {
             Error::exception($e);
             $response = $request->response('',$e->getCode() ?: 1,$e->getMessage());
-        } catch (\Error $error) {
-            \lib\Error::errorLog($error);
-            $response = $request->response('',$error->getCode() ?: 1,$error->getMessage());
         }
         Log::info('response',$response);
         // 向当前client_id发送数据

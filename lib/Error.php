@@ -3,7 +3,7 @@
 
 namespace lib;
 
-use Exception;
+use Throwable;
 
 
 class Error
@@ -38,7 +38,7 @@ class Error
         self::report($e);
     }
 
-    public static function report(Exception $exception)
+    public static function report(Throwable $exception)
     {
         $data = [
             'file'    => $exception->getFile(),

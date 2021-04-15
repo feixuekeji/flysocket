@@ -1057,6 +1057,7 @@ class Validate
 
         /**
          * 解决多条件查询时报错
+         * strpos() expects parameter 1 to be string, int given
          */
         $mapPK = [];
         if (is_string($pk)) {

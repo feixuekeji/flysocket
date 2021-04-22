@@ -29,7 +29,6 @@ use lib\Container;
 
 // 自动加载类
 require_once __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../lib/Autoloader.php';
 /**
  * 主逻辑
  * 主要是处理 onConnect onMessage onClose 三个方法

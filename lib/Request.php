@@ -94,11 +94,6 @@ class Request
     protected $filter;
 
 
-    /**
-     * 路由配置文件
-     * @var array
-     */
-    protected static $routeConfig;
 
     private static $_instance; //存储对象
 
@@ -117,10 +112,7 @@ class Request
         $this->route =  $options['api'] ?? '';
         $this->app =  $options['app'] ?? '';
         $this->ver =  $options['ver'] ?? '';
-        if (empty(self::$routeConfig))
-            self::$routeConfig  = Config::get('','route');//加载路由表
-        if (array_key_exists($this->route, self::$routeConfig))//获取真实路径
-            $this->route = self::$routeConfig[$this->route];
+        $this->route = Container::get('route')->getRoute($this->route);
         $api = explode('/',$this->route);
         $this->setModule($api[0] ?? '');
         $this->setController($api[1] ?? '');

@@ -20,9 +20,29 @@ class App  extends Container
      */
     protected $rootPath;
 
+    /**
+     * 运行时目录
+     * @var string
+     */
+    protected $runtimePath;
+
+    /**
+     * 配置目录
+     * @var string
+     */
+    protected $configPath;
+
+    /**
+     * 路由目录
+     * @var string
+     */
+    protected $routePath;
+
     public function __construct()
     {
         $this->rootPath = __DIR__ . DIRECTORY_SEPARATOR . '../';
+        $this->routePath   = $this->rootPath . 'route' . DIRECTORY_SEPARATOR;
+        $this->configPath  = $this->rootPath . 'config' . DIRECTORY_SEPARATOR;
     }
 
     public function run($client_id, $message)
@@ -56,6 +76,8 @@ class App  extends Container
             $log = Container::get('log',[Config::get('','log')]);
             $cache = Container::get('cache',[Config::get('','cache')]);
             Container::get('session',[Config::get('','session')]);
+            //加载路由
+            Container::get('route')->import();
             //数据库初始化
             Db::setConfig(Config::get('','database'));
             Db::setCache($cache);
@@ -75,6 +97,27 @@ class App  extends Container
     public function getRootPath()
     {
         return $this->rootPath;
+    }
+
+
+    /**
+     * 获取路由目录
+     * @access public
+     * @return string
+     */
+    public function getRoutePath()
+    {
+        return $this->routePath;
+    }
+
+    /**
+     * 获取应用配置目录
+     * @access public
+     * @return string
+     */
+    public function getConfigPath()
+    {
+        return $this->configPath;
     }
 
     /**定时器

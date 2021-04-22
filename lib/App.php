@@ -43,6 +43,7 @@ class App  extends Container
         $this->rootPath = __DIR__ . DIRECTORY_SEPARATOR . '../';
         $this->routePath   = $this->rootPath . 'route' . DIRECTORY_SEPARATOR;
         $this->configPath  = $this->rootPath . 'config' . DIRECTORY_SEPARATOR;
+        $this->runtimePath = $this->rootPath . 'runtime' . DIRECTORY_SEPARATOR;
     }
 
     public function run($client_id, $message)
@@ -118,6 +119,17 @@ class App  extends Container
     public function getConfigPath()
     {
         return $this->configPath;
+    }
+
+
+    /**
+     * 获取应用运行时目录
+     * @access public
+     * @return string
+     */
+    public function getRuntimePath()
+    {
+        return $this->runtimePath;
     }
 
     /**定时器
